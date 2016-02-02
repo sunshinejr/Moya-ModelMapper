@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+
+target 'Moya-ModelMapper_Tests', :exclusive => true do
+  pod 'Moya-ModelMapper', :path => '../'
+
+  
+end
