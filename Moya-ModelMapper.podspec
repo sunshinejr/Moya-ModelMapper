@@ -8,33 +8,44 @@
 
 Pod::Spec.new do |s|
   s.name             = "Moya-ModelMapper"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of Moya-ModelMapper."
+  s.version          = "1.0.0"
+  s.summary          = "ModelMapper bindings for Moya."
+  s.description      = <<-EOS
+  [ModelMapper](https://github.com/lyft/mapper) bindings for
+  [Moya](https://github.com/Moya/Moya) for easier JSON serialization.
+  Includes [RxSwift](https://github.com/ReactiveX/RxSwift/) and [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) bindings as well.
+  Instructions on how to use it are in
+  [the README](https://github.com/sunshinejr/Moya-ModelMapper).
+  EOS
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
-
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/Moya-ModelMapper"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/sunshinejr/Moya-ModelMapper"
   s.license          = 'MIT'
-  s.author           = { "Łukasz Mróz" => "lukasz.mroz@droidsonroids.pl" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/Moya-ModelMapper.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Łukasz Mróz" => "thesunshinejr@gmail.com" }
+  s.source           = { :git => "https://github.com/sunshinejr/Moya-ModelMapper.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/thesunshinejr'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
+  s.default_subspec = "Core"
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'Moya-ModelMapper' => ['Pod/Assets/*.png']
-  }
+  s.subspec "Core" do |ss|
+    ss.source_files  = "Source/*.swift"
+    ss.dependency "Moya", "~> 6.1.3"
+    ss.dependency "ModelMapper", "~> 1.0.0"
+    ss.framework  = "Foundation"
+  end
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec "RxSwift" do |ss|
+    ss.source_files = "Source/RxSwift/*.swift"
+    ss.dependency "Moya/RxSwift", "~> 6.1.3"
+    ss.dependency "Moya-ModelMapper/Core"
+    ss.dependency "RxSwift", "~> 2.0.0"
+  end
+
+  s.subspec "ReactiveCocoa" do |ss|
+    ss.source_files = "Source/ReactiveCocoa/*.swift"
+    ss.dependency "Moya/ReactiveCocoa", "~> 6.1.3"
+    ss.dependency "Moya-ModelMapper/Core"
+    ss.dependency "ReactiveCocoa", "~> 4.0.0"
+  end
 end
