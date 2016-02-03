@@ -10,15 +10,15 @@
 
 ## Cocoapods
 
-`pod 'Moya-ModelMapper', '~> 1.1.2'`
+`pod 'Moya-ModelMapper', '~> 1.0.0'`
 
 The subspec if you want to use the bindings over RxSwift.
 
-`pod 'Moya-ModelMapper/RxSwift', '~> 1.1.2'`
+`pod 'Moya-ModelMapper/RxSwift', '~> 1.0.0'`
 
 And the subspec if you want to use the bindings over ReactiveCocoa.
 
-`pod 'Moya-ModelMapper/ReactiveCocoa', '~> 1.1.2'`
+`pod 'Moya-ModelMapper/ReactiveCocoa', '~> 1.0.0'`
 
 # Usage
 
