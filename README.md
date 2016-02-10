@@ -8,7 +8,7 @@
 
 # Installation
 
-## Cocoapods
+## CocoaPods
 
 `pod 'Moya-ModelMapper', '~> 1.0.0'`
 
