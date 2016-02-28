@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = "https://github.com/sunshinejr/Moya-ModelMapper"
   s.license          = 'MIT'
-  s.author           = { "Łukasz Mróz" => "thesunshinejr@gmail.com" }
+  s.author           = { "Łukasz Mróz" => "thesunshinejr@gmail.com" }
   s.source           = { :git => "https://github.com/sunshinejr/Moya-ModelMapper.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/thesunshinejr'
 
@@ -30,21 +30,21 @@ Pod::Spec.new do |s|
 
   s.subspec "Core" do |ss|
     ss.source_files  = "Source/*.swift"
-    ss.dependency "Moya", "~> 6.1.3"
+    ss.dependency "Moya", "~> 6.2"
     ss.dependency "ModelMapper", "~> 1.0.0"
     ss.framework  = "Foundation"
   end
 
   s.subspec "RxSwift" do |ss|
     ss.source_files = "Source/RxSwift/*.swift"
-    ss.dependency "Moya/RxSwift", "~> 6.1.3"
+    ss.dependency "Moya/RxSwift", "~> 6.2"
     ss.dependency "Moya-ModelMapper/Core"
     ss.dependency "RxSwift", "~> 2.0.0"
   end
 
   s.subspec "ReactiveCocoa" do |ss|
     ss.source_files = "Source/ReactiveCocoa/*.swift"
-    ss.dependency "Moya/ReactiveCocoa", "~> 6.1.3"
+    ss.dependency "Moya/ReactiveCocoa", "~> 6.2"
     ss.dependency "Moya-ModelMapper/Core"
     ss.dependency "ReactiveCocoa", "~> 4.0.0"
   end
