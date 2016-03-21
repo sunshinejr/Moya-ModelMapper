@@ -78,6 +78,25 @@ provider
 }
 ```
 
+Additionally, modules for `RxSwift` contains optional mappings. It basically means that if the mapping fails, mapper doesn't throw errors but returns nil. For instance:
+
+```swift
+provider = RxMoyaProvider(endpointClosure: endpointClosure)
+provider
+    .request(GitHub.Repos("mjacko"))
+    .mapArrayOptional(Repository.self)
+    .subscribe { event in
+        switch event {
+        case .Next(let repos):
+            // Here we can have either nil or [Repository] object.
+            print(repos)
+        case .Error(let error):
+            print(error)
+        default: break
+        }
+}
+```
+
 
 ## 3. ReactiveCocoa
 ```swift
