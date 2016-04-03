@@ -20,13 +20,23 @@ public extension Response {
         return object
     }
     
+    public func mapObject<T: Mappable>(withKeyPath keyPath: String) throws -> T {
+        guard let jsonDictionary = try mapJSON() as? NSDictionary,
+            let objectDictionary = jsonDictionary.valueForKeyPath(keyPath) as? NSDictionary,
+            let object = T.from(objectDictionary) else {
+                throw Error.JSONMapping(self)
+        }
+        
+        return object
+    }
+    
     /// Since 1.0.3 version of ModelMapper is not out in cocoapods,
     /// we have to manually parse arrays
     public func mapArray<T: Mappable>() throws -> [T] {
         guard let jsonArray = try mapJSON() as? NSArray else {
             throw Error.JSONMapping(self)
         }
-
+        
         var returnArray = [T]()
         for dict in jsonArray {
             if let dict = dict as? NSDictionary, object = T.from(dict) {
