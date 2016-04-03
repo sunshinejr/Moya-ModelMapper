@@ -17,10 +17,10 @@ public extension ObservableType where E == Response {
     /// Maps data received from the signal into an object (on the default Background thread) which
     /// implements the Mappable protocol and returns the result back on the MainScheduler.
     /// If the conversion fails, the signal errors.
-    public func mapObject<T: Mappable>(type: T.Type) -> Observable<T> {
+    public func mapObject<T: Mappable>(type: T.Type, withKeyPath keyPath: String = "") -> Observable<T> {
         return observeOn(SerialDispatchQueueScheduler(globalConcurrentQueueQOS: .Background))
             .flatMap { response -> Observable<T> in
-                return Observable.just(try response.mapObject())
+                return Observable.just(try response.mapObject(withKeyPath: keyPath))
             }
             .observeOn(MainScheduler.instance)
     }
@@ -28,10 +28,10 @@ public extension ObservableType where E == Response {
     /// Maps data received from the signal into an array of objects (on the default Background thread)
     /// which implement the Mappable protocol and returns the result back on the MainScheduler
     /// If the conversion fails, the signal errors.
-    public func mapArray<T: Mappable>(type: T.Type) -> Observable<[T]> {
+    public func mapArray<T: Mappable>(type: T.Type, withKeyPath keyPath: String = "") -> Observable<[T]> {
         return observeOn(SerialDispatchQueueScheduler(globalConcurrentQueueQOS: .Background))
             .flatMap { response -> Observable<[T]> in
-                return Observable.just(try response.mapArray())
+                return Observable.just(try response.mapArray(withKeyPath: keyPath))
             }
             .observeOn(MainScheduler.instance)
     }
@@ -39,11 +39,11 @@ public extension ObservableType where E == Response {
     /// Maps data received from the signal into an object (on the default Background thread) which
     /// implements the Mappable protocol and returns the result back on the MainScheduler.
     /// If the conversion fails, the nil is returned instead of error signal.
-    public func mapObjectOptional<T: Mappable>(type: T.Type) -> Observable<T?> {
+    public func mapObjectOptional<T: Mappable>(type: T.Type, withKeyPath keyPath: String = "") -> Observable<T?> {
         return observeOn(SerialDispatchQueueScheduler(globalConcurrentQueueQOS: .Background))
             .flatMap { response -> Observable<T?> in
                 do {
-                    let object: T = try response.mapObject()
+                    let object: T = try response.mapObject(withKeyPath: keyPath)
                     return Observable.just(object)
                 } catch {
                     return Observable.just(nil)
@@ -56,11 +56,11 @@ public extension ObservableType where E == Response {
     /// Maps data received from the signal into an array of objects (on the default Background thread)
     /// which implement the Mappable protocol and returns the result back on the MainScheduler
     /// If the conversion fails, the nil is returned instead of error signal.
-    public func mapArrayOptional<T: Mappable>(type: T.Type) -> Observable<[T]?> {
+    public func mapArrayOptional<T: Mappable>(type: T.Type, withKeyPath keyPath: String = "") -> Observable<[T]?> {
         return observeOn(SerialDispatchQueueScheduler(globalConcurrentQueueQOS: .Background))
             .flatMap { response -> Observable<[T]?> in
                 do {
-                    let object: [T] = try response.mapArray()
+                    let object: [T] = try response.mapArray(withKeyPath: keyPath)
                     return Observable.just(object)
                 } catch {
                     return Observable.just(nil)
