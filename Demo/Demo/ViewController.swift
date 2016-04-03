@@ -10,6 +10,7 @@ import Alamofire
 import UIKit
 import Moya
 import Moya_ModelMapper
+import Mapper
 
 class ViewController: UIViewController {
 
@@ -32,11 +33,24 @@ class ViewController: UIViewController {
             plugins: []
         )
         
+        // Example of mapping array of objects
         provider.request(GitHub.Repos("mjacko")) { (result) in
             if case .Success(let response) = result {
                 do {
                     let repos = try response.mapArray() as [Repository]
                     print(repos)
+                } catch {
+                    print("There was something wrong with the request!")
+                }
+            }
+        }
+        
+        // Example of using keyPath
+        provider.request(GitHub.Repo("moya/moya")) { result in
+            if case .Success(let response) = result {
+                do {
+                    let user = try response.mapObject(withKeyPath: "owner") as User
+                    print(user)
                 } catch {
                     print("There was something wrong with the request!")
                 }

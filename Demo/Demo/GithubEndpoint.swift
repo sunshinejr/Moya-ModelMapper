@@ -19,6 +19,7 @@ enum GitHub {
     case Zen
     case UserProfile(String)
     case Repos(String)
+    case Repo(String)
 }
 
 extension GitHub: TargetType {
@@ -31,6 +32,8 @@ extension GitHub: TargetType {
             return "/zen"
         case .UserProfile(let name):
             return "/users/\(name.URLEscapedString)"
+        case .Repo(let name):
+            return "/repos/\(name)"
         }
     }
     var method: Moya.Method {
@@ -47,6 +50,8 @@ extension GitHub: TargetType {
             return "Half measures are as bad as nothing at all.".dataUsingEncoding(NSUTF8StringEncoding)!
         case .UserProfile(let name):
             return "{\"login\": \"\(name)\", \"id\": 100}".dataUsingEncoding(NSUTF8StringEncoding)!
+        case .Repo(_):
+            return "{\"id\": \"1\", \"language\": \"Swift\", \"url\": \"https://api.github.com/repos/mjacko/Router\", \"name\": \"Router\"}".dataUsingEncoding(NSUTF8StringEncoding)!
         }
     }
 }
