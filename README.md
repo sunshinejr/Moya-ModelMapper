@@ -10,15 +10,19 @@
 
 ## CocoaPods
 
-`pod 'Moya-ModelMapper', '~> 1.0.0'`
+```
+pod 'Moya-ModelMapper', '~> 2.0.0'
+```
 
 The subspec if you want to use the bindings over RxSwift.
-
-`pod 'Moya-ModelMapper/RxSwift', '~> 1.0.0'`
+```
+pod 'Moya-ModelMapper/RxSwift', '~> 2.0.0'
+```
 
 And the subspec if you want to use the bindings over ReactiveCocoa.
-
-`pod 'Moya-ModelMapper/ReactiveCocoa', '~> 1.0.0'`
+```
+pod 'Moya-ModelMapper/ReactiveCocoa', '~> 2.0.0'
+```
 
 # Usage
 
@@ -43,6 +47,22 @@ struct Repository: Mappable {
 }
 ```
 
+Then you have methods that extends the response from Moya. These methods are:
+```swift
+mapObject()
+mapObject(withKeyPath:)
+mapArray()
+mapArray(withKeyPath:)
+```
+
+While using `mapObject()` tries to map whole response data to object,
+with `mapObject(withKeyPath:)` you can specify nested object in a response to
+fetch. For example `mapObject(withKeyPath: "data.response.user")` will go through
+dictionary of data, through dictionary of response to dictionary of user, which it
+will parse. `RxSwift` and `ReactiveCocoa` extensions also have all of the methods,
+but `RxSwift` have optional mapping additionally. See examples below, or in a Demo
+project.
+
 ## 1. Normal usage (without RxSwift or ReactiveCocoa)
 
 ```swift
@@ -65,12 +85,12 @@ provider.request(GitHub.Repos("mjacko")) { (result) in
 ```swift
 provider = RxMoyaProvider(endpointClosure: endpointClosure)
 provider
-    .request(GitHub.Repos("mjacko"))
-    .mapArray(Repository.self)
+    .request(GitHub.Repo("Moya/Moya"))
+    .mapObject(User.self, keyPath: "owner")
     .subscribe { event in
         switch event {
-        case .Next(let repos):
-            print(repos)
+        case .Next(let user):
+            print(user)
         case .Error(let error):
             print(error)
         default: break
