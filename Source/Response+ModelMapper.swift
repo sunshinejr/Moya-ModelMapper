@@ -20,7 +20,9 @@ public extension Response {
         return object
     }
     
-    public func mapObject<T: Mappable>(withKeyPath keyPath: String) throws -> T {
+    public func mapObject<T: Mappable>(withKeyPath keyPath: String?) throws -> T {
+        guard let keyPath = keyPath else { return try mapObject() }
+        
         guard let jsonDictionary = try mapJSON() as? NSDictionary,
             let objectDictionary = jsonDictionary.valueForKeyPath(keyPath) as? NSDictionary,
             let object = T.from(objectDictionary) else {
@@ -38,7 +40,9 @@ public extension Response {
         return object
     }
     
-    public func mapArray<T: Mappable>(withKeyPath keyPath: String) throws -> [T] {
+    public func mapArray<T: Mappable>(withKeyPath keyPath: String?) throws -> [T] {
+        guard let keyPath = keyPath else { return try mapArray() }
+        
         guard let jsonDictionary = try mapJSON() as? NSDictionary,
             let objectArray = jsonDictionary.valueForKeyPath(keyPath) as? NSArray,
             let object = T.from(objectArray) else {

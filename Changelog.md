@@ -1,3 +1,6 @@
+# 2.0.1
+- Fix bug without with mapping without keyPath.
+
 # 2.0.0
 - Add `mapObject(withKeyPath:)` and `mapArray(withKeyPath:)` methods.
 - Add `mapObject(:keyPath:)`, `mapArray(:keyPath:)` to `RxSwift` and `ReactiveCocoa` extensions.
