@@ -54,4 +54,8 @@ extension GitHub: TargetType {
             return "{\"id\": \"1\", \"language\": \"Swift\", \"url\": \"https://api.github.com/repos/mjacko/Router\", \"name\": \"Router\"}".dataUsingEncoding(NSUTF8StringEncoding)!
         }
     }
+    
+    var multipartBody: [MultipartFormData]? {
+        return nil
+    }
 }
