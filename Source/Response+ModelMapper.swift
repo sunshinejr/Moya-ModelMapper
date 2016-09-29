@@ -13,7 +13,7 @@ import Mapper
 public extension Response {
     
     public func mapObject<T: Mappable>() throws -> T {
-        guard let jsonDictionary = try mapJSON() as? NSDictionary, object = T.from(jsonDictionary) else {
+        guard let jsonDictionary = try mapJSON() as? NSDictionary, let object = T.from(jsonDictionary) else {
             throw Error.JSONMapping(self)
         }
         
@@ -33,7 +33,7 @@ public extension Response {
     }
     
     public func mapArray<T: Mappable>() throws -> [T] {
-        guard let jsonArray = try mapJSON() as? NSArray, object = T.from(jsonArray) else {
+        guard let jsonArray = try mapJSON() as? NSArray, let object = T.from(jsonArray) else {
             throw Error.JSONMapping(self)
         }
         
