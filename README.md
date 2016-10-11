@@ -11,17 +11,17 @@
 ## CocoaPods
 
 ```
-pod 'Moya-ModelMapper', '~> 2.0.0'
+pod 'Moya-ModelMapper', '4.0.0-beta.1'
 ```
 
 The subspec if you want to use the bindings over RxSwift.
 ```
-pod 'Moya-ModelMapper/RxSwift', '~> 2.0.0'
+pod 'Moya-ModelMapper/RxSwift', '4.0.0-beta.1'
 ```
 
-And the subspec if you want to use the bindings over ReactiveCocoa.
+And the subspec if you want to use the bindings over ReactiveSwift.
 ```
-pod 'Moya-ModelMapper/ReactiveCocoa', '~> 2.0.0'
+pod 'Moya-ModelMapper/ReactiveCocoa', '4.0.0-beta.1'
 ```
 
 # Usage
@@ -66,13 +66,13 @@ project.
 ## 1. Normal usage (without RxSwift or ReactiveCocoa)
 
 ```swift
-provider = MoyaProvider(endpointClosure: endpointClosure)
-provider.request(GitHub.Repos("mjacko")) { (result) in
-    if case .Success(let response) = result {
+provider = MoyaProvider<GitHub>(endpointClosure: endpointClosure)
+provider.request(GitHub.repos("mjacko")) { (result) in
+    if case .success(let response) = result {
         do {
             let repos = try response.mapArray() as [Repository]
             print(repos)
-        } catch Error.JSONMapping(let error) {
+        } catch Error.jsonMapping(let error) {
             print(try? error.mapString())
         } catch {
             print(":(")
@@ -83,15 +83,15 @@ provider.request(GitHub.Repos("mjacko")) { (result) in
 
 ## 2. RxSwift
 ```swift
-provider = RxMoyaProvider(endpointClosure: endpointClosure)
+provider = RxMoyaProvider<GitHub>(endpointClosure: endpointClosure)
 provider
-    .request(GitHub.Repo("Moya/Moya"))
+    .request(GitHub.repo("Moya/Moya"))
     .mapObject(User.self, keyPath: "owner")
     .subscribe { event in
         switch event {
-        case .Next(let user):
+        case .next(let user):
             print(user)
-        case .Error(let error):
+        case .error(let error):
             print(error)
         default: break
         }
@@ -101,16 +101,16 @@ provider
 Additionally, modules for `RxSwift` contains optional mappings. It basically means that if the mapping fails, mapper doesn't throw errors but returns nil. For instance:
 
 ```swift
-provider = RxMoyaProvider(endpointClosure: endpointClosure)
+provider = RxMoyaProvider<GitHub>(endpointClosure: endpointClosure)
 provider
-    .request(GitHub.Repos("mjacko"))
+    .request(GitHub.repos("mjacko"))
     .mapArrayOptional(Repository.self)
     .subscribe { event in
         switch event {
-        case .Next(let repos):
+        case .next(let repos):
             // Here we can have either nil or [Repository] object.
             print(repos)
-        case .Error(let error):
+        case .error(let error):
             print(error)
         default: break
         }
@@ -120,16 +120,16 @@ provider
 
 ## 3. ReactiveCocoa
 ```swift
-provider = ReactiveCocoaMoyaProvider(endpointClosure: endpointClosure)
+provider = ReactiveCocoaMoyaProvider<GitHub>(endpointClosure: endpointClosure)
 provider
-    .request(GitHub.Repos("mjacko"))
+    .request(GitHub.repos("mjacko"))
     .mapArray(Repository.self)
     .observeOn(UIScheduler())
     .start { event in
         switch event {
-        case .Next(let repos):
+        case .value(let repos):
             print(repos)
-        case .Failed(let error):
+        case .failed(let error):
             print(error)
         default: break
         }
