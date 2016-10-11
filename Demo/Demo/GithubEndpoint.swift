@@ -11,51 +11,52 @@ import Moya
 
 private extension String {
     var URLEscapedString: String {
-        return self.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())!
+        return self.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlHostAllowed)!
     }
 }
 
 enum GitHub {
-    case Zen
-    case UserProfile(String)
-    case Repos(String)
-    case Repo(String)
+    case zen
+    case userProfile(String)
+    case repos(String)
+    case repo(String)
 }
 
 extension GitHub: TargetType {
-    var baseURL: NSURL { return NSURL(string: "https://api.github.com")! }
+
+    var baseURL: URL { return URL(string: "https://api.github.com")! }
     var path: String {
         switch self {
-        case .Repos(let name):
+        case .repos(let name):
             return "/users/\(name.URLEscapedString)/repos"
-        case .Zen:
+        case .zen:
             return "/zen"
-        case .UserProfile(let name):
+        case .userProfile(let name):
             return "/users/\(name.URLEscapedString)"
-        case .Repo(let name):
+        case .repo(let name):
             return "/repos/\(name)"
         }
     }
     var method: Moya.Method {
         return .GET
     }
-    var parameters: [String: AnyObject]? {
+    var parameters: [String: Any]? {
         return nil
     }
-    var sampleData: NSData {
+    var sampleData: Data {
         switch self {
-        case .Repos(_):
-            return "{{\"id\": \"1\", \"language\": \"Swift\", \"url\": \"https://api.github.com/repos/mjacko/Router\"}}".dataUsingEncoding(NSUTF8StringEncoding)!
-        case .Zen:
-            return "Half measures are as bad as nothing at all.".dataUsingEncoding(NSUTF8StringEncoding)!
-        case .UserProfile(let name):
-            return "{\"login\": \"\(name)\", \"id\": 100}".dataUsingEncoding(NSUTF8StringEncoding)!
-        case .Repo(_):
-            return "{\"id\": \"1\", \"language\": \"Swift\", \"url\": \"https://api.github.com/repos/mjacko/Router\", \"name\": \"Router\"}".dataUsingEncoding(NSUTF8StringEncoding)!
+        case .repos(_):
+            return "{{\"id\": \"1\", \"language\": \"Swift\", \"url\": \"https://api.github.com/repos/mjacko/Router\"}}".data(using: String.Encoding.utf8)!
+        case .zen:
+            return "Half measures are as bad as nothing at all.".data(using: String.Encoding.utf8)!
+        case .userProfile(let name):
+            return "{\"login\": \"\(name)\", \"id\": 100}".data(using: String.Encoding.utf8)!
+        case .repo(_):
+            return "{\"id\": \"1\", \"language\": \"Swift\", \"url\": \"https://api.github.com/repos/mjacko/Router\", \"name\": \"Router\"}".data(using: String.Encoding.utf8)!
         }
     }
     
-    var multipartBody: [MultipartFormData]? {
-        return nil
+    public var task: Task {
+        return .request
     }
 }
