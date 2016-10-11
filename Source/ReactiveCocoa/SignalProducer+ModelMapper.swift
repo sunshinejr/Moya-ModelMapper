@@ -6,17 +6,17 @@
 //  Copyright © 2016 sunshinejr. All rights reserved.
 //
 
-import ReactiveCocoa
+import ReactiveSwift
 import Moya
 import Mapper
 
 /// Extension for processing Responses into Mappable objects through ObjectMapper
-extension SignalProducerType where Value == Moya.Response, Error == Moya.Error {
+extension SignalProducerProtocol where Value == Moya.Response, Error == Moya.Error {
     
     /// Maps data received from the signal into an object which implements the Mappable protocol.
     /// If the conversion fails, the signal errors.
     public func mapObject<T: Mappable>(type: T.Type, keyPath: String? = nil) -> SignalProducer<T, Error> {
-        return producer.flatMap(.Latest) { response -> SignalProducer<T, Error> in
+        return producer.flatMap(.latest) { response -> SignalProducer<T, Error> in
             return unwrapThrowable { try response.mapObject(withKeyPath: keyPath) }
         }
     }
@@ -25,7 +25,7 @@ extension SignalProducerType where Value == Moya.Response, Error == Moya.Error {
     /// protocol.
     /// If the conversion fails, the signal errors.
     public func mapArray<T: Mappable>(type: T.Type, keyPath: String? = nil) -> SignalProducer<[T], Error> {
-        return producer.flatMap(.Latest) { response -> SignalProducer<[T], Error> in
+        return producer.flatMap(.latest) { response -> SignalProducer<[T], Error> in
             return unwrapThrowable { try response.mapArray(withKeyPath: keyPath) }
         }
     }
