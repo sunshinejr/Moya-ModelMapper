@@ -24,10 +24,10 @@
       "source_files": "Source/*.swift",
       "dependencies": {
         "Moya": [
-
+          "8.0.0-beta.2"
         ],
         "ModelMapper": [
-
+          "5.0.0"
         ]
       },
       "frameworks": "Foundation"
@@ -37,13 +37,13 @@
       "source_files": "Source/RxSwift/*.swift",
       "dependencies": {
         "Moya/RxSwift": [
-
+          "8.0.0-beta.2"
         ],
         "Moya-ModelMapper/Core": [
 
         ],
         "RxSwift": [
-
+          "3.0.0-beta.2"
         ]
       }
     },
@@ -52,13 +52,13 @@
       "source_files": "Source/ReactiveCocoa/*.swift",
       "dependencies": {
         "Moya/ReactiveCocoa": [
-
+          "8.0.0-beta.2"
         ],
         "Moya-ModelMapper/Core": [
 
         ],
-        "ReactiveCocoa": [
-
+        "ReactiveSwift": [
+          "1.0.0-alpha.2"
         ]
       }
     }
