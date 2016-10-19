@@ -1,5 +1,10 @@
 # Next
 
+# 4.0.0-beta.2
+- Moya updated to 8.0.0-beta.3
+- RxSwift updated to 3.0.0-rc.1
+- ReactiveSwift updated to 1.0.0-alpha.3
+
 # 4.0.0-beta.1
 - Swift updated to 3.0 (this version supports only Swift 3.0)
 - Moya updated to 8.0.0-beta.2
