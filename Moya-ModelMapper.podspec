@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Moya-ModelMapper"
-  s.version          = "4.0.0-beta.3"
+  s.version          = "4.0.0-beta.4"
   s.summary          = "ModelMapper bindings for Moya."
   s.description      = <<-EOS
   [ModelMapper](https://github.com/lyft/mapper) bindings for
@@ -50,6 +50,6 @@ Pod::Spec.new do |s|
     ss.source_files = "Source/ReactiveCocoa/*.swift"
     ss.dependency "Moya/ReactiveCocoa", "8.0.0-beta.5"
     ss.dependency "Moya-ModelMapper/Core"
-    ss.dependency "ReactiveSwift", "1.0.0-alpha.3"
+    ss.dependency "ReactiveSwift", "1.0.0-alpha.4"
   end
 end
