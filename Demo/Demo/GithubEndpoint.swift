@@ -43,6 +43,9 @@ extension GitHub: TargetType {
     var parameters: [String: Any]? {
         return nil
     }
+    var parameterEncoding: ParameterEncoding {
+        return URLEncoding.default
+    }
     var sampleData: Data {
         switch self {
         case .repos(_):
