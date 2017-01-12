@@ -14,7 +14,7 @@ public extension Response {
     
     public func mapObject<T: Mappable>() throws -> T {
         guard let jsonDictionary = try mapJSON() as? NSDictionary, let object = T.from(jsonDictionary) else {
-            throw Error.jsonMapping(self)
+            throw MoyaError.jsonMapping(self)
         }
         
         return object
@@ -26,7 +26,7 @@ public extension Response {
         guard let jsonDictionary = try mapJSON() as? NSDictionary,
             let objectDictionary = jsonDictionary.value(forKeyPath:keyPath) as? NSDictionary,
             let object = T.from(objectDictionary) else {
-                throw Error.jsonMapping(self)
+                throw MoyaError.jsonMapping(self)
         }
         
         return object
@@ -34,7 +34,7 @@ public extension Response {
     
     public func mapArray<T: Mappable>() throws -> [T] {
         guard let jsonArray = try mapJSON() as? NSArray, let object = T.from(jsonArray) else {
-            throw Error.jsonMapping(self)
+            throw MoyaError.jsonMapping(self)
         }
         
         return object
@@ -46,7 +46,7 @@ public extension Response {
         guard let jsonDictionary = try mapJSON() as? NSDictionary,
             let objectArray = jsonDictionary.value(forKeyPath:keyPath) as? NSArray,
             let object = T.from(objectArray) else {
-                throw Error.jsonMapping(self)
+                throw MoyaError.jsonMapping(self)
         }
         
         return object
