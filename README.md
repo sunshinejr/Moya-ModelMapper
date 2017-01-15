@@ -11,17 +11,17 @@
 ## CocoaPods
 
 ```
-pod 'Moya-ModelMapper', '4.0.0-beta.3'
+pod 'Moya-ModelMapper', '4.0.0'
 ```
 
 The subspec if you want to use the bindings over RxSwift.
 ```
-pod 'Moya-ModelMapper/RxSwift', '4.0.0-beta.3'
+pod 'Moya-ModelMapper/RxSwift', '4.0.0'
 ```
 
 And the subspec if you want to use the bindings over ReactiveSwift.
 ```
-pod 'Moya-ModelMapper/ReactiveCocoa', '4.0.0-beta.3'
+pod 'Moya-ModelMapper/ReactiveCocoa', '4.0.0'
 ```
 
 # Usage
