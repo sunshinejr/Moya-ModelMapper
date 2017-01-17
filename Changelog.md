@@ -1,5 +1,8 @@
 # Next
 
+# 4.1.0
+- Update iOS min deploment to 8.0 and macOS to 10.10
+
 # 4.0.0
 - Moya updated to 8.0.0
 - ReactiveSwift updated to 1.0.0
