@@ -1,0 +1,6 @@
+github "Alamofire/Alamofire" "4.5.0"
+github "Moya/Moya" "8.0.5"
+github "ReactiveCocoa/ReactiveSwift" "1.1.3"
+github "ReactiveX/RxSwift" "3.5.0"
+github "antitypical/Result" "3.2.3"
+github "lyft/mapper" "6.0.0"
