@@ -24,6 +24,14 @@ And the subspec if you want to use the bindings over ReactiveSwift.
 pod 'Moya-ModelMapper/ReactiveCocoa', '4.0.0'
 ```
 
+Carthage
+
+You can use Carthage. Specify in Cartfile:
+
+github "sunshinejr/Moya-ModelMapper"
+
+Carthage users can point to this repository and use whichever generated framework they'd like, Moya-ModelMapper, RxMoya-ModelMapper, or ReactiveMoya-ModelMapper.
+
 # Usage
 
 Create a model struct or class. It needs to implement protocol Mappable.
