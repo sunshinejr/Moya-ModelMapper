@@ -9,7 +9,9 @@
 import ReactiveSwift
 import Moya
 import Mapper
+#if !COCOAPODS
 import Moya_ModelMapper
+#endif
 
 /// Extension for processing Responses into Mappable objects through ObjectMapper
 extension SignalProducerProtocol where Value == Moya.Response, Error == MoyaError {

@@ -10,7 +10,9 @@ import Foundation
 import RxSwift
 import Moya
 import Mapper
+#if !COCOAPODS
 import Moya_ModelMapper
+#endif
 
 /// Extension for processing Responses into Mappable objects through ObjectMapper
 public extension ObservableType where E == Response {

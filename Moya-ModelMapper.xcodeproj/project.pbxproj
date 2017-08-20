@@ -113,27 +113,35 @@
 		73978C391F0B79C500A391D0 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				73978C3A1F0B79C500A391D0 /* ReactiveCocoa */,
-				73978C3C1F0B79C500A391D0 /* Response+ModelMapper.swift */,
-				73978C3D1F0B79C500A391D0 /* RxSwift */,
+				D26DE8B01F4A2A9B007B05C1 /* Moya-ModelMapper */,
+				73978C3A1F0B79C500A391D0 /* ReactiveMoya-ModelMapper */,
+				73978C3D1F0B79C500A391D0 /* RxMoya-ModelMapper */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		73978C3A1F0B79C500A391D0 /* ReactiveCocoa */ = {
+		73978C3A1F0B79C500A391D0 /* ReactiveMoya-ModelMapper */ = {
 			isa = PBXGroup;
 			children = (
 				73978C3B1F0B79C500A391D0 /* SignalProducer+ModelMapper.swift */,
 			);
-			path = ReactiveCocoa;
+			path = "ReactiveMoya-ModelMapper";
 			sourceTree = "<group>";
 		};
-		73978C3D1F0B79C500A391D0 /* RxSwift */ = {
+		73978C3D1F0B79C500A391D0 /* RxMoya-ModelMapper */ = {
 			isa = PBXGroup;
 			children = (
 				73978C3E1F0B79C500A391D0 /* Observable+ModelMapper.swift */,
 			);
-			path = RxSwift;
+			path = "RxMoya-ModelMapper";
+			sourceTree = "<group>";
+		};
+		D26DE8B01F4A2A9B007B05C1 /* Moya-ModelMapper */ = {
+			isa = PBXGroup;
+			children = (
+				73978C3C1F0B79C500A391D0 /* Response+ModelMapper.swift */,
+			);
+			path = "Moya-ModelMapper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

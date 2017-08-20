@@ -33,21 +33,21 @@ Pod::Spec.new do |s|
   s.default_subspec = "Core"
 
   s.subspec "Core" do |ss|
-    ss.source_files  = "Source/*.swift"
+    ss.source_files  = "Sources/Moya-ModelMapper/*.swift"
     ss.dependency "Moya", "~> 8.0.0"
     ss.dependency "ModelMapper"
     ss.framework  = "Foundation"
   end
 
   s.subspec "RxSwift" do |ss|
-    ss.source_files = "Source/RxSwift/*.swift"
+    ss.source_files = "Sources/RxMoya-ModelMapper/*.swift"
     ss.dependency "Moya/RxSwift", "~> 8.0.0"
     ss.dependency "Moya-ModelMapper/Core"
     ss.dependency "RxSwift"
   end
 
   s.subspec "ReactiveCocoa" do |ss|
-    ss.source_files = "Source/ReactiveCocoa/*.swift"
+    ss.source_files = "Sources/ReactiveMoya-ModelMapper/*.swift"
     ss.dependency "Moya/ReactiveCocoa", "~> 8.0.0"
     ss.dependency "Moya-ModelMapper/Core"
     ss.dependency "ReactiveSwift"
