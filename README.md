@@ -34,6 +34,16 @@ github "sunshinejr/Moya-ModelMapper"
 
 Carthage users can point to this repository and use whichever generated framework they'd like, Moya-ModelMapper, RxMoya-ModelMapper, or ReactiveMoya-ModelMapper.
 
+## Swift Package Manager
+
+Add the following as a dependency to your `Package.swift`.
+
+```swift
+.Package(url: "https://github.com/sunshinejr/Moya-ModelMapper.git", majorVersion: 4)
+```
+
+The bindings are available through `Moya_ModelMapper` module. If you are interested in reactive extensions, use `ReactiveMoya_ModelMapper` or `RxMoya_ModelMapper` respectively.
+
 # Usage
 
 Create a model struct or class. It needs to implement protocol Mappable.
