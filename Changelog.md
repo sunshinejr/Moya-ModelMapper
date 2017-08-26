@@ -1,5 +1,12 @@
 # Next
 
+# 5.0.0-beta.1
+- Renamed methods from `mapObject`, `mapArray` to `map(to:keyPath:)`.
+- Renamed RxSwift extensions method to `map(to:keyPath:)` as well.
+- Updated Moya to 9.0.0-beta.1.
+- Added `Single<Response>` extensions to RxSwift so Moya 9.0 feels right in usage.
+- Renamed CocoaPods subspec from `Moya-ModelMapper/ReactiveCocoa` to `Moya-ModelMapper/ReactiveSwift`. However, the former one will still work for some time as well.
+
 # 4.1.0
 - Update iOS min deploment to 8.0 and macOS to 10.10
 
