@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         provider.request(GitHub.repos("mjacko")) { (result) in
             if case .success(let response) = result {
                 do {
-                    let repos = try response.mapArray() as [Repository]
+                    let repos = try response.map(to: [Repository].self)
                     print(repos)
                 } catch let error {
                     print("There was something wrong with the request! Error: \(error)")
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         provider.request(GitHub.repo("moya/moya")) { result in
             if case .success(let response) = result {
                 do {
-                    let user = try response.mapObject(withKeyPath: "owner") as User
+                    let user = try response.map(to: User.self, keyPath: "owner")
                     print(user)
                 } catch {
                     print("There was something wrong with the request!")

@@ -11,8 +11,8 @@ import Moya
 import Mapper
 
 public extension Response {
-    
-    public func mapObject<T: Mappable>() throws -> T {
+
+    public func map<T: Mappable>(to type: T.Type) throws -> T {
         guard let jsonDictionary = try mapJSON() as? NSDictionary else {
             throw MoyaError.jsonMapping(self)
         }
@@ -24,8 +24,8 @@ public extension Response {
         }
     }
     
-    public func mapObject<T: Mappable>(withKeyPath keyPath: String?) throws -> T {
-        guard let keyPath = keyPath else { return try mapObject() }
+    public func map<T: Mappable>(to type: T.Type, keyPath: String?) throws -> T {
+        guard let keyPath = keyPath else { return try map(to: type) }
         
         guard let jsonDictionary = try mapJSON() as? NSDictionary,
             let objectDictionary = jsonDictionary.value(forKeyPath:keyPath) as? NSDictionary else {
@@ -39,7 +39,7 @@ public extension Response {
         }
     }
     
-    public func mapArray<T: Mappable>() throws -> [T] {
+    public func map<T: Mappable>(to type: [T].Type) throws -> [T] {
         guard let jsonArray = try mapJSON() as? [NSDictionary] else {
             throw MoyaError.jsonMapping(self)
         }
@@ -51,8 +51,8 @@ public extension Response {
         }
     }
     
-    public func mapArray<T: Mappable>(withKeyPath keyPath: String?) throws -> [T] {
-        guard let keyPath = keyPath else { return try mapArray() }
+    public func map<T: Mappable>(to type: [T].Type, keyPath: String?) throws -> [T] {
+        guard let keyPath = keyPath else { return try map(to: type) }
         
         guard let jsonDictionary = try mapJSON() as? NSDictionary,
             let objectArray = jsonDictionary.value(forKeyPath:keyPath) as? [NSDictionary] else {
