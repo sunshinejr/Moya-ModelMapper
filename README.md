@@ -11,17 +11,17 @@
 ## CocoaPods
 
 ```
-pod 'Moya-ModelMapper', '4.0.0'
+pod 'Moya-ModelMapper', '5.0.0-beta.1'
 ```
 
 The subspec if you want to use the bindings over RxSwift.
 ```
-pod 'Moya-ModelMapper/RxSwift', '4.0.0'
+pod 'Moya-ModelMapper/RxSwift', '5.0.0-beta.1'
 ```
 
 And the subspec if you want to use the bindings over ReactiveSwift.
 ```
-pod 'Moya-ModelMapper/ReactiveCocoa', '4.0.0'
+pod 'Moya-ModelMapper/ReactiveSwift', '5.0.0-beta.1'
 ```
 
 ## Carthage
@@ -39,7 +39,7 @@ Carthage users can point to this repository and use whichever generated framewor
 Add the following as a dependency to your `Package.swift`.
 
 ```swift
-.Package(url: "https://github.com/sunshinejr/Moya-ModelMapper.git", majorVersion: 4)
+.Package(url: "https://github.com/sunshinejr/Moya-ModelMapper.git", majorVersion: Version(5, 0, 0, prereleaseIdentifiers: ["beta", "1"]))
 ```
 
 The bindings are available through `Moya_ModelMapper` module. If you are interested in reactive extensions, use `ReactiveMoya_ModelMapper` or `RxMoya_ModelMapper` respectively.
@@ -69,15 +69,13 @@ struct Repository: Mappable {
 
 Then you have methods that extends the response from Moya. These methods are:
 ```swift
-mapObject()
-mapObject(withKeyPath:)
-mapArray()
-mapArray(withKeyPath:)
+map(to:)
+map(to:keyPath:)
 ```
 
-While using `mapObject()` tries to map whole response data to object,
-with `mapObject(withKeyPath:)` you can specify nested object in a response to
-fetch. For example `mapObject(withKeyPath: "data.response.user")` will go through
+While using `map(to:)` tries to map whole response data to object/array,
+with `map(to:keyPath:)` you can specify nested object in a response to
+fetch. For example `map(to: User.self, keyPath: "data.response.user")` will go through
 dictionary of data, through dictionary of response to dictionary of user, which it
 will parse. `RxSwift` and `ReactiveCocoa` extensions also have all of the methods,
 but `RxSwift` have optional mapping additionally. See examples below, or in a Demo
@@ -90,7 +88,7 @@ provider = MoyaProvider<GitHub>(endpointClosure: endpointClosure)
 provider.request(GitHub.repos("mjacko")) { (result) in
     if case .success(let response) = result {
         do {
-            let repos = try response.mapArray() as [Repository]
+            let repos = try response.map(to: [Repository].self)
             print(repos)
         } catch Error.jsonMapping(let error) {
             print(try? error.mapString())
@@ -103,13 +101,12 @@ provider.request(GitHub.repos("mjacko")) { (result) in
 
 ## 2. RxSwift
 ```swift
-provider = RxMoyaProvider<GitHub>(endpointClosure: endpointClosure)
-provider
-    .request(GitHub.repo("Moya/Moya"))
-    .mapObject(User.self, keyPath: "owner")
+provider = MoyaProvider<GitHub>(endpointClosure: endpointClosure)
+provider.rx.request(GitHub.repo("Moya/Moya"))
+    .map(to: User.self, keyPath: "owner")
     .subscribe { event in
         switch event {
-        case .next(let user):
+        case .success(let user):
             print(user)
         case .error(let error):
             print(error)
@@ -121,13 +118,12 @@ provider
 Additionally, modules for `RxSwift` contains optional mappings. It basically means that if the mapping fails, mapper doesn't throw errors but returns nil. For instance:
 
 ```swift
-provider = RxMoyaProvider<GitHub>(endpointClosure: endpointClosure)
-provider
-    .request(GitHub.repos("mjacko"))
-    .mapArrayOptional(Repository.self)
+provider = MoyaProvider<GitHub>(endpointClosure: endpointClosure)
+provider.rx.request(GitHub.repos("mjacko"))
+    .mapOptional(to: [Repository].self)
     .subscribe { event in
         switch event {
-        case .next(let repos):
+        case .success(let repos):
             // Here we can have either nil or [Repository] object.
             print(repos)
         case .error(let error):
@@ -138,12 +134,11 @@ provider
 ```
 
 
-## 3. ReactiveCocoa
+## 3. ReactiveSwift
 ```swift
-provider = ReactiveCocoaMoyaProvider<GitHub>(endpointClosure: endpointClosure)
-provider
-    .request(GitHub.repos("mjacko"))
-    .mapArray(Repository.self)
+provider = MoyaProvider<GitHub>(endpointClosure: endpointClosure)
+provider.reactive.request(GitHub.repos("mjacko"))
+    .map(to: [Repository].self)
     .observeOn(UIScheduler())
     .start { event in
         switch event {
