@@ -1,5 +1,4 @@
 # Moya-ModelMapper
-============
 
 [![CocoaPods](https://img.shields.io/cocoapods/v/Moya-ModelMapper.svg)](https://github.com/sunshinejr/Moya-ModelMapper)
 
@@ -110,7 +109,6 @@ provider.rx.request(GitHub.repo("Moya/Moya"))
             print(user)
         case .error(let error):
             print(error)
-        default: break
         }
 }
 ```
@@ -128,7 +126,6 @@ provider.rx.request(GitHub.repos("mjacko"))
             print(repos)
         case .error(let error):
             print(error)
-        default: break
         }
 }
 ```
