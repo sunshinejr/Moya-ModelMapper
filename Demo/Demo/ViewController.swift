@@ -33,8 +33,8 @@ class ViewController: UIViewController {
                 do {
                     let repos = try response.mapArray() as [Repository]
                     print(repos)
-                } catch {
-                    print("There was something wrong with the request!")
+                } catch let error {
+                    print("There was something wrong with the request! Error: \(error)")
                 }
             }
         }

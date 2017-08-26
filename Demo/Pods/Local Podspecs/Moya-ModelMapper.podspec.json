@@ -1,6 +1,6 @@
 {
   "name": "Moya-ModelMapper",
-  "version": "4.0.0",
+  "version": "4.1.1",
   "summary": "ModelMapper bindings for Moya.",
   "description": "[ModelMapper](https://github.com/lyft/mapper) bindings for\n[Moya](https://github.com/Moya/Moya) for easier JSON serialization.\nIncludes [RxSwift](https://github.com/ReactiveX/RxSwift/) and [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) bindings as well.\nInstructions on how to use it are in\n[the README](https://github.com/sunshinejr/Moya-ModelMapper).",
   "homepage": "https://github.com/sunshinejr/Moya-ModelMapper",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/sunshinejr/Moya-ModelMapper.git",
-    "tag": "4.0.0"
+    "tag": "4.1.1"
   },
   "social_media_url": "https://twitter.com/thesunshinejr",
   "platforms": {
@@ -24,7 +24,7 @@
   "subspecs": [
     {
       "name": "Core",
-      "source_files": "Source/*.swift",
+      "source_files": "Sources/Moya-ModelMapper/*.swift",
       "dependencies": {
         "Moya": [
           "~> 8.0.0"
@@ -37,7 +37,7 @@
     },
     {
       "name": "RxSwift",
-      "source_files": "Source/RxSwift/*.swift",
+      "source_files": "Sources/RxMoya-ModelMapper/*.swift",
       "dependencies": {
         "Moya/RxSwift": [
           "~> 8.0.0"
@@ -52,7 +52,7 @@
     },
     {
       "name": "ReactiveCocoa",
-      "source_files": "Source/ReactiveCocoa/*.swift",
+      "source_files": "Sources/ReactiveMoya-ModelMapper/*.swift",
       "dependencies": {
         "Moya/ReactiveCocoa": [
           "~> 8.0.0"
