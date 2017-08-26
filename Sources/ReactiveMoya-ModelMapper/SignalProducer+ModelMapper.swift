@@ -10,7 +10,7 @@ import ReactiveSwift
 import Moya
 import Mapper
 #if !COCOAPODS
-import Moya_ModelMapper
+    import Moya_ModelMapper
 #endif
 
 /// Extension for processing Responses into Mappable objects through ObjectMapper
@@ -18,18 +18,18 @@ extension SignalProducerProtocol where Value == Moya.Response, Error == MoyaErro
     
     /// Maps data received from the signal into an object which implements the Mappable protocol.
     /// If the conversion fails, the signal errors.
-    public func mapObject<T: Mappable>(type: T.Type, keyPath: String? = nil) -> SignalProducer<T, MoyaError> {
+    public func map<T: Mappable>(to type: T.Type, keyPath: String? = nil) -> SignalProducer<T, MoyaError> {
         return producer.flatMap(.latest) { response -> SignalProducer<T, Error> in
-            return unwrapThrowable { try response.mapObject(withKeyPath: keyPath) }
+            return unwrapThrowable { try response.map(to: type, keyPath: keyPath) }
         }
     }
     
     /// Maps data received from the signal into an array of objects which implement the Mappable
     /// protocol.
     /// If the conversion fails, the signal errors.
-    public func mapArray<T: Mappable>(type: T.Type, keyPath: String? = nil) -> SignalProducer<[T], MoyaError> {
+    public func map<T: Mappable>(to type: [T].Type, keyPath: String? = nil) -> SignalProducer<[T], MoyaError> {
         return producer.flatMap(.latest) { response -> SignalProducer<[T], Error> in
-            return unwrapThrowable { try response.mapArray(withKeyPath: keyPath) }
+            return unwrapThrowable { try response.map(to: type, keyPath: keyPath) }
         }
     }
 }

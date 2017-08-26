@@ -52,6 +52,14 @@
     },
     {
       "name": "ReactiveCocoa",
+      "dependencies": {
+        "Moya-ModelMapper/ReactiveSwift": [
+
+        ]
+      }
+    },
+    {
+      "name": "ReactiveSwift",
       "source_files": "Sources/ReactiveMoya-ModelMapper/*.swift",
       "dependencies": {
         "Moya/ReactiveCocoa": [
