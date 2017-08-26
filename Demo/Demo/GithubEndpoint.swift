@@ -25,6 +25,10 @@ enum GitHub {
 extension GitHub: TargetType {
 
     var baseURL: URL { return URL(string: "https://api.github.com")! }
+    var method: Moya.Method { return .get }
+    var headers: [String : String]? { return nil }
+    var task: Task { return .requestPlain }
+
     var path: String {
         switch self {
         case .repos(let name):
@@ -37,15 +41,7 @@ extension GitHub: TargetType {
             return "/repos/\(name)"
         }
     }
-    var method: Moya.Method {
-        return .get
-    }
-    var parameters: [String: Any]? {
-        return nil
-    }
-    var parameterEncoding: ParameterEncoding {
-        return URLEncoding.default
-    }
+    
     var sampleData: Data {
         switch self {
         case .repos(_):
@@ -57,9 +53,5 @@ extension GitHub: TargetType {
         case .repo(_):
             return "{\"id\": \"1\", \"language\": \"Swift\", \"url\": \"https://api.github.com/repos/mjacko/Router\", \"name\": \"Router\"}".data(using: String.Encoding.utf8)!
         }
-    }
-    
-    public var task: Task {
-        return .request
     }
 }
