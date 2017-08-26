@@ -1,5 +1,5 @@
 //
-//  Response+ModelMapper.swift
+//  ResponseAvailability.swift
 //  Pods
 //
 //  Created by sunshinejr on 26.08.2017.
