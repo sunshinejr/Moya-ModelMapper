@@ -20,7 +20,7 @@ public extension Response {
         do {
             return try T(map: Mapper(JSON: jsonDictionary))
         } catch {
-            throw MoyaError.underlying(error)
+            throw MoyaError.underlying(error, self)
         }
     }
     
@@ -35,7 +35,7 @@ public extension Response {
         do {
             return try T(map: Mapper(JSON: objectDictionary))
         } catch {
-            throw MoyaError.underlying(error)
+            throw MoyaError.underlying(error, self)
         }
     }
     
@@ -47,7 +47,7 @@ public extension Response {
         do {
             return try jsonArray.map { try T(map: Mapper(JSON: $0)) }
         } catch {
-            throw MoyaError.underlying(error)
+            throw MoyaError.underlying(error, self)
         }
     }
     
@@ -62,7 +62,7 @@ public extension Response {
         do {
             return try objectArray.map { try T(map: Mapper(JSON: $0)) }
         } catch {
-            throw MoyaError.underlying(error)
+            throw MoyaError.underlying(error, self)
         }
     }
 }
