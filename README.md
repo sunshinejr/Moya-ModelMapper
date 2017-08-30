@@ -28,7 +28,7 @@ pod 'Moya-ModelMapper/ReactiveSwift', '5.0.0-beta.1'
 Specify in Cartfile:
 
 ```
-github "sunshinejr/Moya-ModelMapper"
+github "sunshinejr/Moya-ModelMapper" "5.0.0-beta.1"
 ```
 
 Carthage users can point to this repository and use whichever generated framework they'd like, Moya-ModelMapper, RxMoya-ModelMapper, or ReactiveMoya-ModelMapper.
