@@ -38,7 +38,7 @@ Carthage users can point to this repository and use whichever generated framewor
 Add the following as a dependency to your `Package.swift`.
 
 ```swift
-.Package(url: "https://github.com/sunshinejr/Moya-ModelMapper.git", majorVersion: Version(5, 0, 0, prereleaseIdentifiers: ["beta", "1"]))
+.Package(url: "https://github.com/sunshinejr/Moya-ModelMapper.git", Version(5, 0, 0, prereleaseIdentifiers: ["beta", "1"]))
 ```
 
 The bindings are available through `Moya_ModelMapper` module. If you are interested in reactive extensions, use `ReactiveMoya_ModelMapper` or `RxMoya_ModelMapper` respectively.
