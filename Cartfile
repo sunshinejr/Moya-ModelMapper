@@ -1,4 +1,2 @@
-github "ReactiveX/RxSwift"
-github "ReactiveCocoa/ReactiveSwift" ~> 1.1
-github "Moya/Moya" ~> 8.0.0
+github "Moya/Moya" "9.0.0-beta.1"
 github "lyft/mapper"
