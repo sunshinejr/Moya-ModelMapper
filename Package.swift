@@ -10,7 +10,7 @@ let package = Package(
         Target(name: "ReactiveMoya-ModelMapper", dependencies: ["Moya-ModelMapper"])
     ],
     dependencies: [
-        .Package(url: "https://github.com/Moya/Moya", Version(9, 0, 0, prereleaseIdentifiers: ["beta", "1"])),
+        .Package(url: "https://github.com/Moya/Moya", majorVersion: 9),
         .Package(url: "https://github.com/lyft/mapper", majorVersion: 6),
     ]
 )
