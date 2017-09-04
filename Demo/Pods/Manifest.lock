@@ -1,14 +1,14 @@
 PODS:
   - Alamofire (4.5.0)
   - ModelMapper (6.0.0)
-  - Moya (9.0.0-beta.1):
-    - Moya/Core (= 9.0.0-beta.1)
-  - Moya-ModelMapper (5.0.0-beta.1):
-    - Moya-ModelMapper/Core (= 5.0.0-beta.1)
-  - Moya-ModelMapper/Core (5.0.0-beta.1):
+  - Moya (9.0.0):
+    - Moya/Core (= 9.0.0)
+  - Moya-ModelMapper (5.0.0):
+    - Moya-ModelMapper/Core (= 5.0.0)
+  - Moya-ModelMapper/Core (5.0.0):
     - ModelMapper
-    - Moya (= 9.0.0-beta.1)
-  - Moya/Core (9.0.0-beta.1):
+    - Moya (~> 9.0.0)
+  - Moya/Core (9.0.0):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
   - Result (3.2.3)
@@ -23,8 +23,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   ModelMapper: 3596a82f26c43491f6a8d3a00bcdba6ba0e62a93
-  Moya: 35fa432d35c82510783af32b071d75d25fff1c50
-  Moya-ModelMapper: e63fb484da7cea290c207fb3eca7054b14764fdc
+  Moya: cf5e6ee93af526532f92614004b8ad2ea60fd845
+  Moya-ModelMapper: b5df9a01635db725fd046a08f388c69636d206c4
   Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
 
 PODFILE CHECKSUM: d1cfc5edd47575898d3edf159f6af1afd82ec19b
