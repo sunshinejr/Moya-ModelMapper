@@ -1,5 +1,8 @@
 # Next
 
+# 5.0.0
+- Updated Moya to 9.0.0.
+
 # 5.0.0-beta.1
 - Renamed methods from `mapObject`, `mapArray` to `map(to:keyPath:)`.
 - Renamed RxSwift extensions method to `map(to:keyPath:)` as well.
