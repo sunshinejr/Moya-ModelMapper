@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14873B081F6BEEFF000E6AA8 /* SignalProducerAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14873B071F6BEEFF000E6AA8 /* SignalProducerAvailability.swift */; };
+		14873B091F6BEEFF000E6AA8 /* SignalProducerAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14873B071F6BEEFF000E6AA8 /* SignalProducerAvailability.swift */; };
+		14873B0B1F6BEF0F000E6AA8 /* ObservableAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14873B0A1F6BEF0F000E6AA8 /* ObservableAvailability.swift */; };
+		14873B0C1F6BEF0F000E6AA8 /* ObservableAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14873B0A1F6BEF0F000E6AA8 /* ObservableAvailability.swift */; };
+		14873B0E1F6BEF1E000E6AA8 /* Single+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14873B0D1F6BEF1E000E6AA8 /* Single+ModelMapper.swift */; };
+		14873B0F1F6BEF1E000E6AA8 /* Single+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14873B0D1F6BEF1E000E6AA8 /* Single+ModelMapper.swift */; };
 		73978C401F0B79C500A391D0 /* SignalProducer+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73978C3B1F0B79C500A391D0 /* SignalProducer+ModelMapper.swift */; };
 		73978C411F0B79C500A391D0 /* Response+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73978C3C1F0B79C500A391D0 /* Response+ModelMapper.swift */; };
 		73978C421F0B79C500A391D0 /* Observable+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73978C3E1F0B79C500A391D0 /* Observable+ModelMapper.swift */; };
@@ -30,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14873B071F6BEEFF000E6AA8 /* SignalProducerAvailability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalProducerAvailability.swift; sourceTree = "<group>"; };
+		14873B0A1F6BEF0F000E6AA8 /* ObservableAvailability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableAvailability.swift; sourceTree = "<group>"; };
+		14873B0D1F6BEF1E000E6AA8 /* Single+ModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Single+ModelMapper.swift"; sourceTree = "<group>"; };
 		73978C2D1F0B797B00A391D0 /* Moya_ModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Moya_ModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73978C381F0B79C500A391D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73978C3B1F0B79C500A391D0 /* SignalProducer+ModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignalProducer+ModelMapper.swift"; sourceTree = "<group>"; };
@@ -124,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				73978C3B1F0B79C500A391D0 /* SignalProducer+ModelMapper.swift */,
+				14873B071F6BEEFF000E6AA8 /* SignalProducerAvailability.swift */,
 			);
 			path = "ReactiveMoya-ModelMapper";
 			sourceTree = "<group>";
@@ -132,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				73978C3E1F0B79C500A391D0 /* Observable+ModelMapper.swift */,
+				14873B0A1F6BEF0F000E6AA8 /* ObservableAvailability.swift */,
+				14873B0D1F6BEF1E000E6AA8 /* Single+ModelMapper.swift */,
 			);
 			path = "RxMoya-ModelMapper";
 			sourceTree = "<group>";
@@ -272,7 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14873B0F1F6BEF1E000E6AA8 /* Single+ModelMapper.swift in Sources */,
+				14873B091F6BEEFF000E6AA8 /* SignalProducerAvailability.swift in Sources */,
 				73978C401F0B79C500A391D0 /* SignalProducer+ModelMapper.swift in Sources */,
+				14873B0C1F6BEF0F000E6AA8 /* ObservableAvailability.swift in Sources */,
 				73978C411F0B79C500A391D0 /* Response+ModelMapper.swift in Sources */,
 				73978C421F0B79C500A391D0 /* Observable+ModelMapper.swift in Sources */,
 			);
@@ -283,6 +298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				73978C5A1F0B822F00A391D0 /* Response+ModelMapper.swift in Sources */,
+				14873B0B1F6BEF0F000E6AA8 /* ObservableAvailability.swift in Sources */,
+				14873B0E1F6BEF1E000E6AA8 /* Single+ModelMapper.swift in Sources */,
 				73978C5B1F0B822F00A391D0 /* Observable+ModelMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14873B081F6BEEFF000E6AA8 /* SignalProducerAvailability.swift in Sources */,
 				73978C751F0B832A00A391D0 /* SignalProducer+ModelMapper.swift in Sources */,
 				73978C761F0B832A00A391D0 /* Response+ModelMapper.swift in Sources */,
 			);
