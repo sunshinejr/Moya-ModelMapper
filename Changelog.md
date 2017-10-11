@@ -1,5 +1,9 @@
 # Next
 
+# 6.0.0-beta.1
+- **Breaking change** Removed observing schedulers from mapping. Take a look at [MigrationGuide.md](https://github.com/sunshinejr/Moya-ModelMapper/blob/master/MigrationGuide.md).
+- Updated Moya 10.0.0-beta.1
+
 # 5.0.0
 - Updated Moya to 9.0.0.
 
