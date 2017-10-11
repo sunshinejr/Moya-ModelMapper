@@ -15,12 +15,12 @@ pod 'Moya-ModelMapper', '6.0.0-beta.1'
 
 The subspec if you want to use the bindings over RxSwift.
 ```
-pod 'Moya-ModelMapper/RxSwift', '~> 6.0.0-beta.1'
+pod 'Moya-ModelMapper/RxSwift', '6.0.0-beta.1'
 ```
 
 And the subspec if you want to use the bindings over ReactiveSwift.
 ```
-pod 'Moya-ModelMapper/ReactiveSwift', '~> 6.0.0-beta.1'
+pod 'Moya-ModelMapper/ReactiveSwift', '6.0.0-beta.1'
 ```
 
 ## Carthage
