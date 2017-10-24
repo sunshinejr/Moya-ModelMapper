@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/Moya/Moya.git",
         "state": {
           "branch": null,
-          "revision": "3299cd826fe0988af13885997b7bf1a70d01d3e0",
-          "version": "10.0.0-beta.1"
+          "revision": "7b2bd10b94c47a950160156dd4b5b76fa7a67116",
+          "version": "10.0.0"
         }
       },
       {
@@ -51,8 +51,8 @@
         "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
         "state": {
           "branch": null,
-          "revision": "61261f2ee97ace3e08713921dd9406669b9debee",
-          "version": "4.0.0-rc.0"
+          "revision": "12cccb171ad9038251af6883807f0290c1d75a5b",
+          "version": "4.0.0"
         }
       }
     ]
