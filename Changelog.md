@@ -1,13 +1,15 @@
 # Next
+- Fixed SPM integration for reactive providers.
+- Moya updated to 10.0.0
 
 # 6.0.0-beta.1
 - **Breaking change** Removed observing schedulers from mapping. Take a look at [MigrationGuide.md](https://github.com/sunshinejr/Moya-ModelMapper/blob/master/MigrationGuide.md).
-- Updated Moya 10.0.0-beta.1
+- Moya updated to 10.0.0-beta.1
 - SPM updated to SPMv4
 - Carthage support for tvOS, macOS and watchOS
 
 # 5.0.0
-- Updated Moya to 9.0.0.
+- Moya updated to 9.0.0
 
 # 5.0.0-beta.1
 - Renamed methods from `mapObject`, `mapArray` to `map(to:keyPath:)`.
