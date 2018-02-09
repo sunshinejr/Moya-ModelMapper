@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "Moya-ModelMapper",
     dependencies: [
-        .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "10.0.0")),
+        .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "11.0.0")),
         .package(url: "https://github.com/lyft/mapper.git", .upToNextMajor(from: "7.0.0")),
     ],
     targets: [
