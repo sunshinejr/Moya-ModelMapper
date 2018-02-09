@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
         "state": {
           "branch": null,
-          "revision": "b8995447518fd57af14c88a47f27434a16f60403",
-          "version": "4.5.1"
+          "revision": "bc973c5311ce3db3f01a9fcde027fb11fa2254bf",
+          "version": "4.6.0"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/lyft/mapper.git",
         "state": {
           "branch": null,
-          "revision": "5c88b9a4816ede8b40154c2b5735bfacfc36f67e",
-          "version": "7.2.0"
+          "revision": "aeeac53516f557a8063bb3b724e3c2a54d23be6d",
+          "version": "7.4.0"
         }
       },
       {
@@ -24,8 +24,26 @@
         "repositoryURL": "https://github.com/Moya/Moya.git",
         "state": {
           "branch": null,
-          "revision": "7b2bd10b94c47a950160156dd4b5b76fa7a67116",
-          "version": "10.0.0"
+          "revision": "0b90f7ee8dcc378fe48db18c8b281e8792244de9",
+          "version": "11.0.0"
+        }
+      },
+      {
+        "package": "Nimble",
+        "repositoryURL": "https://github.com/Quick/Nimble.git",
+        "state": {
+          "branch": null,
+          "revision": "22800b0954c89344bb8c87f8ab93378076716fb7",
+          "version": "7.0.3"
+        }
+      },
+      {
+        "package": "Quick",
+        "repositoryURL": "https://github.com/Quick/Quick.git",
+        "state": {
+          "branch": null,
+          "revision": "0ff81f2c665b4381f526bd656f8708dd52a9ea2f",
+          "version": "1.2.0"
         }
       },
       {
@@ -33,8 +51,8 @@
         "repositoryURL": "https://github.com/ReactiveCocoa/ReactiveSwift.git",
         "state": {
           "branch": null,
-          "revision": "b9d5b350a446b85704396ce332a1f9e4960cfc6b",
-          "version": "2.0.1"
+          "revision": "46fb4d4a8285286e54929add1d12f384675895c6",
+          "version": "3.1.0"
         }
       },
       {
@@ -51,8 +69,8 @@
         "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
         "state": {
           "branch": null,
-          "revision": "12cccb171ad9038251af6883807f0290c1d75a5b",
-          "version": "4.0.0"
+          "revision": "3e848781c7756accced855a6317a4c2ff5e8588b",
+          "version": "4.1.2"
         }
       }
     ]
