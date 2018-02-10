@@ -1,0 +1,51 @@
+language = swift("4.0")
+platforms = [
+    macos("10.10"),
+    ios("8.0"),
+    tvos("9.0"),
+    watchos("2.0")
+]
+
+moya_model_mapper = new_target do |target|
+  target.name = "Moya-ModelMapper"
+  target.platforms = platforms
+  target.language = language
+  target.info_plist = "Sources/Supporting Files/Info.plist"
+  target.bundle_id = "com.sunshinejr.MoyaModelMapper"
+  target.include_files = ["Sources/Moya-ModelMapper/**/*.swift"]
+  target.exclude_files = []
+  target.is_safe_for_extensions = false
+  target.dependencies = ["Moya"]
+end
+
+reactive_moya_model_mapper = new_target do |target|
+  target.name = "ReactiveMoya-ModelMapper"
+  target.platforms = platforms
+  target.language = language
+  target.info_plist = "Sources/Supporting Files/Info.plist"
+  target.bundle_id = "com.sunshinejr.ReactiveMoyaModelMapper"
+  target.include_files = ["Sources/ReactiveMoya-ModelMapper/**/*.swift"]
+  target.exclude_files = []
+  target.is_safe_for_extensions = false
+  target.dependencies = ["Moya-ModelMapper", "ReactiveSwift"]
+end
+
+rx_moya_model_mapper = new_target do |target|
+  target.name = "RxMoya-ModelMapper"
+  target.platforms = platforms
+  target.language = language
+  target.info_plist = "Sources/Supporting Files/Info.plist"
+  target.bundle_id = "com.sunshinejr.RxMoyaModelMapper"
+  target.include_files = ["Sources/RxMoya-ModelMapper/**/*.swift"]
+  target.exclude_files = []
+  target.is_safe_for_extensions = false
+  target.dependencies = ["Moya-ModelMapper", "RxSwift"]
+end
+
+project.name = "Moya-ModelMapper"
+project.scripts_directory = "scripts"
+project.targets = [
+  moya_model_mapper,
+  reactive_moya_model_mapper,
+  rx_moya_model_mapper
+]
