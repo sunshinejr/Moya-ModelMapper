@@ -25,11 +25,11 @@
 		4781241E0AF46ABE6517C23D /* Single+ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Single+ModelMapper.swift"; path = "Sources/RxMoya-ModelMapper/Single+ModelMapper.swift"; sourceTree = "<group>"; };
 		4F942567AED1DDC03C6CCD96 /* SignalProducer+ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SignalProducer+ModelMapper.swift"; path = "Sources/ReactiveMoya-ModelMapper/SignalProducer+ModelMapper.swift"; sourceTree = "<group>"; };
 		A08BBAB8D616ED9113151EF8 /* ResponseAvailability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseAvailability.swift; path = "Sources/Moya-ModelMapper/ResponseAvailability.swift"; sourceTree = "<group>"; };
-		A37953D9E61252C674E78EE4 /* ReactiveMoya-ModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "ReactiveMoya-ModelMapper.framework"; path = ReactiveMoya_ModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A37953D9E61252C674E78EE4 /* ReactiveMoya_ModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveMoya_ModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE032B316598598287DC124F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Sources/Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		B236D13D871453966419A2B1 /* Response+ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Response+ModelMapper.swift"; path = "Sources/Moya-ModelMapper/Response+ModelMapper.swift"; sourceTree = "<group>"; };
 		F79D259FB2830ACF6B15C2A4 /* Moya_ModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Moya_ModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC4E7AF93EC3A2935C8DD35F /* RxMoya-ModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "RxMoya-ModelMapper.framework"; path = RxMoya_ModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC4E7AF93EC3A2935C8DD35F /* RxMoya_ModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxMoya_ModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				F79D259FB2830ACF6B15C2A4 /* Moya_ModelMapper.framework */,
-				A37953D9E61252C674E78EE4 /* ReactiveMoya-ModelMapper.framework */,
-				FC4E7AF93EC3A2935C8DD35F /* RxMoya-ModelMapper.framework */,
+				A37953D9E61252C674E78EE4 /* ReactiveMoya_ModelMapper.framework */,
+				FC4E7AF93EC3A2935C8DD35F /* RxMoya_ModelMapper.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,7 +149,7 @@
 			);
 			name = "ReactiveMoya-ModelMapper";
 			productName = "ReactiveMoya-ModelMapper";
-			productReference = A37953D9E61252C674E78EE4 /* ReactiveMoya-ModelMapper.framework */;
+			productReference = A37953D9E61252C674E78EE4 /* ReactiveMoya_ModelMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		731CF91AF49075E22DCBF8A1 /* Moya-ModelMapper */ = {
@@ -183,7 +183,7 @@
 			);
 			name = "RxMoya-ModelMapper";
 			productName = "RxMoya-ModelMapper";
-			productReference = FC4E7AF93EC3A2935C8DD35F /* RxMoya-ModelMapper.framework */;
+			productReference = FC4E7AF93EC3A2935C8DD35F /* RxMoya_ModelMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -297,7 +297,7 @@
 					"$(inherited)",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Ressources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -391,7 +391,7 @@
 					"$(inherited)",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Ressources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -483,7 +483,7 @@
 					"$(inherited)",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Ressources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -530,7 +530,7 @@
 					"$(inherited)",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Ressources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
