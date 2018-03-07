@@ -1,7 +1,10 @@
 # Next
 
-# 7.0.1
+# 7.0.2
 - Fixed a bug that Single extensions still had observing on schedulers that Observable extensions had removed in Moya-ModelMapper 6.0.
+
+# 7.0.1 (Carthage only)
+- Fixed a bug that Carthage would consume unnecessary second xcodeproj.
 
 # 7.0.0
 - Fixed SPM integration for reactive providers.
