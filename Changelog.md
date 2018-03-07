@@ -1,3 +1,8 @@
+# Next
+
+# 7.0.1
+- Fixed a bug that Single extensions still had observing on schedulers that Observable extensions had removed in Moya-ModelMapper 6.0.
+
 # 7.0.0
 - Fixed SPM integration for reactive providers.
 - Moya updated to 11.0.0
