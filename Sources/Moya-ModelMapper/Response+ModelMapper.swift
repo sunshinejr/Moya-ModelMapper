@@ -43,14 +43,18 @@ public extension Response {
         guard let jsonArray = try mapJSON() as? [NSDictionary] else {
             throw MoyaError.jsonMapping(self)
         }
-
-        do {
-            return try jsonArray.map { try T(map: Mapper(JSON: $0)) }
-        } catch {
-            throw MoyaError.underlying(error, self)
+        
+        if jsonArray.count > 0 {
+            do {
+                return try jsonArray.map { try T(map: Mapper(JSON: $0)) }
+            } catch {
+                throw MoyaError.underlying(error, self)
+            }
+        } else {
+            return [T]()
         }
     }
-    
+
     public func map<T: Mappable>(to type: [T].Type, keyPath: String?) throws -> [T] {
         guard let keyPath = keyPath else { return try map(to: type) }
         
