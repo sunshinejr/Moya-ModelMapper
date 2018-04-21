@@ -1,11 +1,3 @@
-//
-//  SignalProducerAvailability.swift
-//  Pods
-//
-//  Created by sunshinejr on 26.08.2017.
-//  Copyright © 2017 sunshinejr. All rights reserved.
-//
-
 import ReactiveSwift
 import Moya
 import Mapper

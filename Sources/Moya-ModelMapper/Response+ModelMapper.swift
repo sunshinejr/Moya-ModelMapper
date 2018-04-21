@@ -1,11 +1,3 @@
-//
-//  Response+ModelMapper.swift
-//  Pods
-//
-//  Created by sunshinejr on 02.02.2016.
-//  Copyright © 2016 sunshinejr. All rights reserved.
-//
-
 import Foundation
 import Moya
 import Mapper
@@ -50,6 +42,14 @@ public extension Response {
             throw MoyaError.underlying(error, self)
         }
     }
+
+    public func compactMap<T: Mappable>(to type: [T].Type) throws -> [T] {
+        guard let jsonArray = try mapJSON() as? [NSDictionary] else {
+            throw MoyaError.jsonMapping(self)
+        }
+
+        return jsonArray.compactMap { try? T(map: Mapper(JSON: $0)) }
+    }
     
     public func map<T: Mappable>(to type: [T].Type, keyPath: String?) throws -> [T] {
         guard let keyPath = keyPath else { return try map(to: type) }
@@ -64,5 +64,16 @@ public extension Response {
         } catch {
             throw MoyaError.underlying(error, self)
         }
+    }
+
+    public func compactMap<T: Mappable>(to type: [T].Type, keyPath: String?) throws -> [T] {
+        guard let keyPath = keyPath else { return try compactMap(to: type) }
+
+        guard let jsonDictionary = try mapJSON() as? NSDictionary,
+            let objectArray = jsonDictionary.value(forKeyPath:keyPath) as? [NSDictionary] else {
+                throw MoyaError.jsonMapping(self)
+        }
+
+        return objectArray.compactMap { try? T(map: Mapper(JSON: $0)) }
     }
 }

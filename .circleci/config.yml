@@ -1,0 +1,33 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/sunshinejr/moya-modelmapper
+    parallelism: 1
+    shell: /bin/bash --login
+    environment:
+      LANG: en_US.UTF-8
+    macos:
+      xcode: '9.3.0'
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-build-{{ .Branch }}-
+      - save_cache:
+          key: v1-build-{{ .Branch }}-{{ epoch }}
+          paths:
+            - .build
+      - run: 
+          name: swift build
+          command: swift build
+      - run: 
+          name: swift test
+          command: swift test
+      - store_test_results:
+          path: test_output/report.xml
+      - store_artifacts:
+          path: /tmp/test-results
+          destination: scan-test-results
+      - store_artifacts:
+          path: ~/Library/Logs/scan
+          destination: scan-logs          
