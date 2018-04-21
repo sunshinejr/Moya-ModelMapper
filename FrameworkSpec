@@ -15,7 +15,14 @@ moya_model_mapper_tests = new_target do |target|
   target.include_files = ["Tests/**/*.swift"]
   target.exclude_files = []
   target.resource_files = ["Tests/**/*.png"]
-  target.dependencies = ["Quick", "Nimble"]
+  target.dependencies = [
+    "Quick", 
+    "Nimble",
+    "Result",
+    "Alamofire",
+    "ReactiveSwift",
+    "RxSwift"
+    ]
   target.type = :unit_test_bundle
   target.enable_code_coverage = true
 end
@@ -29,7 +36,7 @@ moya_model_mapper = new_target do |target|
   target.include_files = ["Sources/Moya-ModelMapper/**/*.swift"]
   target.exclude_files = []
   target.is_safe_for_extensions = false
-  target.dependencies = ["Moya"]
+  target.dependencies = ["Moya", "Mapper"]
   target.test_target = moya_model_mapper_tests
 end
 

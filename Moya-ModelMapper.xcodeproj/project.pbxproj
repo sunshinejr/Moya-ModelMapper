@@ -7,192 +7,184 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		015F257888D40C89BF2EFEB3 /* Single+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456659133AAEDBE95A49D0AA /* Single+ModelMapper.swift */; };
-		1401BF6C208BE07300F7D144 /* ResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401BF69208BD92B00F7D144 /* ResponseTests.swift */; };
-		5F761D4624D6A0A4EEB1E5F8 /* SignalProducerAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EA2DFA1C6B787A7312D707 /* SignalProducerAvailability.swift */; };
-		796E597C9A5734C5496F5DF3 /* Moya_ModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D33CE8A9EAB76A54277860 /* Moya_ModelMapper.framework */; };
-		A926A79832E05A85F3D67ED0 /* Response+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9772BA60B5BA5C1EEC827AE0 /* Response+ModelMapper.swift */; };
-		BDA8D11FB94BD4CBB262F4A1 /* Array+Shims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC46402099D45038FB7E9FC /* Array+Shims.swift */; };
-		C13100F67C62F09BE29C3859 /* Moya_ModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D33CE8A9EAB76A54277860 /* Moya_ModelMapper.framework */; };
-		D8DEA602CBB5F66639927507 /* SignalProducer+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D688598DA8FF32CA5375A0 /* SignalProducer+ModelMapper.swift */; };
-		E351B082C1CCFC334E871CD3 /* ObservableAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390E9BCF8C07C148306D4663 /* ObservableAvailability.swift */; };
-		F8AC1EA7F4799AE55A6192B2 /* Observable+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E1534692EA33A472DE222C /* Observable+ModelMapper.swift */; };
-		FDBC44D3D255CB419AFD02B1 /* ResponseAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D3B3244EC179DA787785DA /* ResponseAvailability.swift */; };
+		2BE112F6F1A6F878657CDA85 /* ResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EEB87EA4E52ADED6B68C53 /* ResponseTests.swift */; };
+		36311EDC0665E12068FFD7DA /* Single+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AA3084E44F648DF19950F0 /* Single+ModelMapper.swift */; };
+		5DDBE412EE6BD5A372A75ADC /* Moya_ModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE81E613E56926FBB64DDF9 /* Moya_ModelMapper.framework */; };
+		903C6932A6B6AC06B716D024 /* SignalProducer+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37667F5A6E2401DF3962AF28 /* SignalProducer+ModelMapper.swift */; };
+		A7973FE26E9E11E3E461A80D /* Response+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9CD1844E6ABD3821E6A0D3 /* Response+ModelMapper.swift */; };
+		C78DCD213E40FB52DD2FB77D /* ResponseAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C969B6DDB2EDE6E28033DB7 /* ResponseAvailability.swift */; };
+		C7DCA2A4CA74A428F4AF2691 /* Moya_ModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE81E613E56926FBB64DDF9 /* Moya_ModelMapper.framework */; };
+		D237A5BD67941D72C32A9E04 /* ObservableAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9646B99830E83EF28B38DC /* ObservableAvailability.swift */; };
+		E77AE05F29F74F2EB0776F6B /* Observable+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A984669CCAA0C2F5B20588A /* Observable+ModelMapper.swift */; };
+		E7FB7CD2CDCB30DC64D90BBD /* SignalProducerAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC43F718977D8E2E890B205 /* SignalProducerAvailability.swift */; };
+		F85B2B687754019FE5B8EE11 /* Array+Shims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AB7B9A13A60AF4F158CB42 /* Array+Shims.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2675D50D207EE2AA7E44A998 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB913DA46952A671AC32A13A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94215FD09018680C8FEC446B;
+			remoteInfo = "Moya-ModelMapper";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		05E1534692EA33A472DE222C /* Observable+ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Observable+ModelMapper.swift"; path = "Sources/RxMoya-ModelMapper/Observable+ModelMapper.swift"; sourceTree = "<group>"; };
-		10D33CE8A9EAB76A54277860 /* Moya_ModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Moya_ModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1401BF69208BD92B00F7D144 /* ResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResponseTests.swift; path = Tests/ResponseTests.swift; sourceTree = "<group>"; };
-		1C21C0F92DED21540CFA7B63 /* RxMoya-ModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "RxMoya-ModelMapper.framework"; path = RxMoya_ModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		21B11F8BB48683E188D01DD2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Sources/Supporting Files/Info.plist"; sourceTree = "<group>"; };
-		27D3B3244EC179DA787785DA /* ResponseAvailability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseAvailability.swift; path = "Sources/Moya-ModelMapper/ResponseAvailability.swift"; sourceTree = "<group>"; };
-		2C5766F284DCECEEC107FC4D /* Moya-ModelMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Moya-ModelMapperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		390E9BCF8C07C148306D4663 /* ObservableAvailability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableAvailability.swift; path = "Sources/RxMoya-ModelMapper/ObservableAvailability.swift"; sourceTree = "<group>"; };
-		456659133AAEDBE95A49D0AA /* Single+ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Single+ModelMapper.swift"; path = "Sources/RxMoya-ModelMapper/Single+ModelMapper.swift"; sourceTree = "<group>"; };
-		57EA2DFA1C6B787A7312D707 /* SignalProducerAvailability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignalProducerAvailability.swift; path = "Sources/ReactiveMoya-ModelMapper/SignalProducerAvailability.swift"; sourceTree = "<group>"; };
-		5AC46402099D45038FB7E9FC /* Array+Shims.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Shims.swift"; path = "Sources/Moya-ModelMapper/Array+Shims.swift"; sourceTree = "<group>"; };
-		66582C102EAD24670B688D10 /* ReactiveMoya-ModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "ReactiveMoya-ModelMapper.framework"; path = ReactiveMoya_ModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9772BA60B5BA5C1EEC827AE0 /* Response+ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Response+ModelMapper.swift"; path = "Sources/Moya-ModelMapper/Response+ModelMapper.swift"; sourceTree = "<group>"; };
-		D5386FC0648B91513460C8AE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = "<group>"; };
-		D6D688598DA8FF32CA5375A0 /* SignalProducer+ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SignalProducer+ModelMapper.swift"; path = "Sources/ReactiveMoya-ModelMapper/SignalProducer+ModelMapper.swift"; sourceTree = "<group>"; };
+		0A984669CCAA0C2F5B20588A /* Observable+ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Observable+ModelMapper.swift"; path = "Sources/RxMoya-ModelMapper/Observable+ModelMapper.swift"; sourceTree = "<group>"; };
+		16AB7B9A13A60AF4F158CB42 /* Array+Shims.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Shims.swift"; path = "Sources/Moya-ModelMapper/Array+Shims.swift"; sourceTree = "<group>"; };
+		1D9646B99830E83EF28B38DC /* ObservableAvailability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableAvailability.swift; path = "Sources/RxMoya-ModelMapper/ObservableAvailability.swift"; sourceTree = "<group>"; };
+		25AA3084E44F648DF19950F0 /* Single+ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Single+ModelMapper.swift"; path = "Sources/RxMoya-ModelMapper/Single+ModelMapper.swift"; sourceTree = "<group>"; };
+		28099130010EA4AAB455075F /* Moya-ModelMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Moya-ModelMapperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37667F5A6E2401DF3962AF28 /* SignalProducer+ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SignalProducer+ModelMapper.swift"; path = "Sources/ReactiveMoya-ModelMapper/SignalProducer+ModelMapper.swift"; sourceTree = "<group>"; };
+		4C969B6DDB2EDE6E28033DB7 /* ResponseAvailability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseAvailability.swift; path = "Sources/Moya-ModelMapper/ResponseAvailability.swift"; sourceTree = "<group>"; };
+		4FE5A21E444225EF0BEF0169 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = "<group>"; };
+		62767AB602E0F1AF4284D5FD /* RxMoya-ModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "RxMoya-ModelMapper.framework"; path = RxMoya_ModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AB9B6E39157EECFB3A58418 /* ReactiveMoya-ModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "ReactiveMoya-ModelMapper.framework"; path = ReactiveMoya_ModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F9CD1844E6ABD3821E6A0D3 /* Response+ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Response+ModelMapper.swift"; path = "Sources/Moya-ModelMapper/Response+ModelMapper.swift"; sourceTree = "<group>"; };
+		8FC43F718977D8E2E890B205 /* SignalProducerAvailability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignalProducerAvailability.swift; path = "Sources/ReactiveMoya-ModelMapper/SignalProducerAvailability.swift"; sourceTree = "<group>"; };
+		B7EEB87EA4E52ADED6B68C53 /* ResponseTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseTests.swift; path = "Tests/Moya-ModelMapperTests/ResponseTests.swift"; sourceTree = "<group>"; };
+		DBE81E613E56926FBB64DDF9 /* Moya_ModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Moya_ModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEAC002ECAF8DEB1F33366A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Sources/Supporting Files/Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		20A02D814109D9F27192147E /* Frameworks */ = {
+		163A95674C7B776C1044D4B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C13100F67C62F09BE29C3859 /* Moya_ModelMapper.framework in Frameworks */,
+				5DDBE412EE6BD5A372A75ADC /* Moya_ModelMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63EFB357F73CD17BD4ACBC17 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				796E597C9A5734C5496F5DF3 /* Moya_ModelMapper.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		712D02A21C2619C42FB816A0 /* Frameworks */ = {
+		39E5EF53ABA6B1850A0A8A6E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6F3E2450B6D00F422D8F085 /* Frameworks */ = {
+		637FC272A6599F8054E5F75F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92C6BC4C09FE74BB5B01BC70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DCA2A4CA74A428F4AF2691 /* Moya_ModelMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1401BF6A208BD95100F7D144 /* Moya-ModelMapper */ = {
+		08F0C822DE09E17B70BC5E0A /* RxMoya-ModelMapper */ = {
 			isa = PBXGroup;
 			children = (
-				1401BF69208BD92B00F7D144 /* ResponseTests.swift */,
-			);
-			name = "Moya-ModelMapper";
-			sourceTree = "<group>";
-		};
-		432AA81DD4515E4315869222 /* ReactiveMoya-ModelMapper */ = {
-			isa = PBXGroup;
-			children = (
-				57EA2DFA1C6B787A7312D707 /* SignalProducerAvailability.swift */,
-				D6D688598DA8FF32CA5375A0 /* SignalProducer+ModelMapper.swift */,
-			);
-			name = "ReactiveMoya-ModelMapper";
-			sourceTree = "<group>";
-		};
-		6FF00487DAC1985415ED3955 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				10D33CE8A9EAB76A54277860 /* Moya_ModelMapper.framework */,
-				66582C102EAD24670B688D10 /* ReactiveMoya-ModelMapper.framework */,
-				1C21C0F92DED21540CFA7B63 /* RxMoya-ModelMapper.framework */,
-				2C5766F284DCECEEC107FC4D /* Moya-ModelMapperTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		71E0987A0D0C9BD723769F8F /* RxMoya-ModelMapper */ = {
-			isa = PBXGroup;
-			children = (
-				390E9BCF8C07C148306D4663 /* ObservableAvailability.swift */,
-				05E1534692EA33A472DE222C /* Observable+ModelMapper.swift */,
-				456659133AAEDBE95A49D0AA /* Single+ModelMapper.swift */,
+				1D9646B99830E83EF28B38DC /* ObservableAvailability.swift */,
+				0A984669CCAA0C2F5B20588A /* Observable+ModelMapper.swift */,
+				25AA3084E44F648DF19950F0 /* Single+ModelMapper.swift */,
 			);
 			name = "RxMoya-ModelMapper";
 			sourceTree = "<group>";
 		};
-		8A9FCE955927A6E9E64F9800 = {
+		21EC65802DDE30C2DFDC38F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6FF00487DAC1985415ED3955 /* Products */,
-				C84BA4FA5AE4F3F6EEDE8F9E /* Frameworks */,
-				BC24C69D43C73C7A41F3A669 /* Sources */,
-				94C1EA3E62C5BC62028CCD6F /* Tests */,
+				DBE81E613E56926FBB64DDF9 /* Moya_ModelMapper.framework */,
+				8AB9B6E39157EECFB3A58418 /* ReactiveMoya-ModelMapper.framework */,
+				62767AB602E0F1AF4284D5FD /* RxMoya-ModelMapper.framework */,
+				28099130010EA4AAB455075F /* Moya-ModelMapperTests.xctest */,
 			);
+			name = Products;
 			sourceTree = "<group>";
 		};
-		94C1EA3E62C5BC62028CCD6F /* Tests */ = {
+		2A5BDB562DF8ABB8868CF3CB /* Moya-ModelMapper */ = {
 			isa = PBXGroup;
 			children = (
-				1401BF6A208BD95100F7D144 /* Moya-ModelMapper */,
-				D5386FC0648B91513460C8AE /* Info.plist */,
+				16AB7B9A13A60AF4F158CB42 /* Array+Shims.swift */,
+				8F9CD1844E6ABD3821E6A0D3 /* Response+ModelMapper.swift */,
+				4C969B6DDB2EDE6E28033DB7 /* ResponseAvailability.swift */,
+			);
+			name = "Moya-ModelMapper";
+			sourceTree = "<group>";
+		};
+		59A488B0B0EF4B3B4B8DBF6B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4FE5A21E444225EF0BEF0169 /* Info.plist */,
+				710670E886E375696B9F9468 /* Moya-ModelMapperTests */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
 		};
-		B0F49498689D499228EC121B /* Supporting Files */ = {
+		59EE0A14050068B7182F372F = {
 			isa = PBXGroup;
 			children = (
-				21B11F8BB48683E188D01DD2 /* Info.plist */,
+				21EC65802DDE30C2DFDC38F4 /* Products */,
+				DCE505A9485CC701A17AAAB0 /* Frameworks */,
+				BD5E7077B161E5F389B9FC3F /* Sources */,
+				59A488B0B0EF4B3B4B8DBF6B /* Tests */,
 			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BC24C69D43C73C7A41F3A669 /* Sources */ = {
+		710670E886E375696B9F9468 /* Moya-ModelMapperTests */ = {
 			isa = PBXGroup;
 			children = (
-				B0F49498689D499228EC121B /* Supporting Files */,
-				DE28B8590005D30EA9843FDC /* Moya-ModelMapper */,
-				432AA81DD4515E4315869222 /* ReactiveMoya-ModelMapper */,
-				71E0987A0D0C9BD723769F8F /* RxMoya-ModelMapper */,
+				B7EEB87EA4E52ADED6B68C53 /* ResponseTests.swift */,
+			);
+			name = "Moya-ModelMapperTests";
+			sourceTree = "<group>";
+		};
+		BD5E7077B161E5F389B9FC3F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E95B9259E02DDC6269D3D070 /* Supporting Files */,
+				2A5BDB562DF8ABB8868CF3CB /* Moya-ModelMapper */,
+				C6FFA50B49584AE2394438FA /* ReactiveMoya-ModelMapper */,
+				08F0C822DE09E17B70BC5E0A /* RxMoya-ModelMapper */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
 		};
-		C84BA4FA5AE4F3F6EEDE8F9E /* Frameworks */ = {
+		C6FFA50B49584AE2394438FA /* ReactiveMoya-ModelMapper */ = {
+			isa = PBXGroup;
+			children = (
+				8FC43F718977D8E2E890B205 /* SignalProducerAvailability.swift */,
+				37667F5A6E2401DF3962AF28 /* SignalProducer+ModelMapper.swift */,
+			);
+			name = "ReactiveMoya-ModelMapper";
+			sourceTree = "<group>";
+		};
+		DCE505A9485CC701A17AAAB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DE28B8590005D30EA9843FDC /* Moya-ModelMapper */ = {
+		E95B9259E02DDC6269D3D070 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5AC46402099D45038FB7E9FC /* Array+Shims.swift */,
-				9772BA60B5BA5C1EEC827AE0 /* Response+ModelMapper.swift */,
-				27D3B3244EC179DA787785DA /* ResponseAvailability.swift */,
+				FAEAC002ECAF8DEB1F33366A /* Info.plist */,
 			);
-			name = "Moya-ModelMapper";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		33F6215E8933C79CEB6706CA /* Moya-ModelMapperTests */ = {
+		5C206CBAFBC7BB1C07AC3444 /* RxMoya-ModelMapper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C958E394E0B50649073DE62A /* Build configuration list for PBXNativeTarget "Moya-ModelMapperTests" */;
+			buildConfigurationList = B1181D531F5EBB27AA3451C0 /* Build configuration list for PBXNativeTarget "RxMoya-ModelMapper" */;
 			buildPhases = (
-				1401BF6B208BE06F00F7D144 /* Sources */,
-				E0B4D3D7BDB1DDEDE204067F /* Resources */,
-				712D02A21C2619C42FB816A0 /* Frameworks */,
-				32FBAFDD41DDD302B942B5FF /* Copy Carthage Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Moya-ModelMapperTests";
-			productName = "Moya-ModelMapperTests";
-			productReference = 2C5766F284DCECEEC107FC4D /* Moya-ModelMapperTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		3F5D32FDCF2E75130AE7A03F /* RxMoya-ModelMapper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 06BF064201162C130866B3AE /* Build configuration list for PBXNativeTarget "RxMoya-ModelMapper" */;
-			buildPhases = (
-				9DFFA646FC7D42FA01AA0820 /* Sources */,
-				426EC04C2FC779F71DDBA4A4 /* Resources */,
-				63EFB357F73CD17BD4ACBC17 /* Frameworks */,
+				613E1F513CF69AB0B5983DD6 /* Sources */,
+				940EE586C875BCB3A70B06E6 /* Resources */,
+				163A95674C7B776C1044D4B7 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,16 +192,35 @@
 			);
 			name = "RxMoya-ModelMapper";
 			productName = "RxMoya-ModelMapper";
-			productReference = 1C21C0F92DED21540CFA7B63 /* RxMoya-ModelMapper.framework */;
+			productReference = 62767AB602E0F1AF4284D5FD /* RxMoya-ModelMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		88EFD3E477EDA79AE6ACB09A /* ReactiveMoya-ModelMapper */ = {
+		6AF451CBE94A1F9E57DE5DB3 /* Moya-ModelMapperTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64508E5948D10721D34433F8 /* Build configuration list for PBXNativeTarget "ReactiveMoya-ModelMapper" */;
+			buildConfigurationList = D0330C1F82E76A4F511990F2 /* Build configuration list for PBXNativeTarget "Moya-ModelMapperTests" */;
 			buildPhases = (
-				F66D3324D17780DDA4DE4A54 /* Sources */,
-				DE20434429EE223D6855D26C /* Resources */,
-				20A02D814109D9F27192147E /* Frameworks */,
+				7F70B2FF4B9DC95CAF50B059 /* Sources */,
+				3B05663EB381A2A1D063635A /* Resources */,
+				39E5EF53ABA6B1850A0A8A6E /* Frameworks */,
+				6E07D8C9E95ADBCE04D41188 /* Copy Carthage Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98D42D99527BFB147B1A260B /* PBXTargetDependency */,
+			);
+			name = "Moya-ModelMapperTests";
+			productName = "Moya-ModelMapperTests";
+			productReference = 28099130010EA4AAB455075F /* Moya-ModelMapperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		83C45250F64351263F4FEAF7 /* ReactiveMoya-ModelMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BA59FEA80802F32F8FEE85C /* Build configuration list for PBXNativeTarget "ReactiveMoya-ModelMapper" */;
+			buildPhases = (
+				2690BE082CD937BA95B24615 /* Sources */,
+				BE1A4C268E564706D65C74D7 /* Resources */,
+				92C6BC4C09FE74BB5B01BC70 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,16 +228,16 @@
 			);
 			name = "ReactiveMoya-ModelMapper";
 			productName = "ReactiveMoya-ModelMapper";
-			productReference = 66582C102EAD24670B688D10 /* ReactiveMoya-ModelMapper.framework */;
+			productReference = 8AB9B6E39157EECFB3A58418 /* ReactiveMoya-ModelMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D83E8F106D0C8B7AB94B2E84 /* Moya-ModelMapper */ = {
+		94215FD09018680C8FEC446B /* Moya-ModelMapper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58F82C9A422FC7410AC2E6F1 /* Build configuration list for PBXNativeTarget "Moya-ModelMapper" */;
+			buildConfigurationList = 70A3B0C97634DC0E63D40CD2 /* Build configuration list for PBXNativeTarget "Moya-ModelMapper" */;
 			buildPhases = (
-				A3A55D9FF29955E005F9A6FB /* Sources */,
-				534ACEEFEA74F3DD015BFFF7 /* Resources */,
-				D6F3E2450B6D00F422D8F085 /* Frameworks */,
+				40C9944DCB2B5466D3D8DE1C /* Sources */,
+				C3078D628E5414D60FDF14BD /* Resources */,
+				637FC272A6599F8054E5F75F /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,66 +245,61 @@
 			);
 			name = "Moya-ModelMapper";
 			productName = "Moya-ModelMapper";
-			productReference = 10D33CE8A9EAB76A54277860 /* Moya_ModelMapper.framework */;
+			productReference = DBE81E613E56926FBB64DDF9 /* Moya_ModelMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6CC3936429952457053FF834 /* Project object */ = {
+		DB913DA46952A671AC32A13A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				TargetAttributes = {
-					33F6215E8933C79CEB6706CA = {
-						LastSwiftMigration = 0930;
-					};
-				};
 			};
-			buildConfigurationList = 569DF2FEA2140009265381EA /* Build configuration list for PBXProject "Moya-ModelMapper" */;
+			buildConfigurationList = 33889D6209379FC0BF7B1D55 /* Build configuration list for PBXProject "Moya-ModelMapper" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 8A9FCE955927A6E9E64F9800;
-			productRefGroup = 6FF00487DAC1985415ED3955 /* Products */;
+			mainGroup = 59EE0A14050068B7182F372F;
+			productRefGroup = 21EC65802DDE30C2DFDC38F4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D83E8F106D0C8B7AB94B2E84 /* Moya-ModelMapper */,
-				88EFD3E477EDA79AE6ACB09A /* ReactiveMoya-ModelMapper */,
-				3F5D32FDCF2E75130AE7A03F /* RxMoya-ModelMapper */,
-				33F6215E8933C79CEB6706CA /* Moya-ModelMapperTests */,
+				94215FD09018680C8FEC446B /* Moya-ModelMapper */,
+				83C45250F64351263F4FEAF7 /* ReactiveMoya-ModelMapper */,
+				5C206CBAFBC7BB1C07AC3444 /* RxMoya-ModelMapper */,
+				6AF451CBE94A1F9E57DE5DB3 /* Moya-ModelMapperTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		426EC04C2FC779F71DDBA4A4 /* Resources */ = {
+		3B05663EB381A2A1D063635A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		534ACEEFEA74F3DD015BFFF7 /* Resources */ = {
+		940EE586C875BCB3A70B06E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE20434429EE223D6855D26C /* Resources */ = {
+		BE1A4C268E564706D65C74D7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0B4D3D7BDB1DDEDE204067F /* Resources */ = {
+		C3078D628E5414D60FDF14BD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -303,7 +309,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		32FBAFDD41DDD302B942B5FF /* Copy Carthage Frameworks */ = {
+		6E07D8C9E95ADBCE04D41188 /* Copy Carthage Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,6 +317,10 @@
 			inputPaths = (
 				Quick.framework,
 				Nimble.framework,
+				Result.framework,
+				Alamofire.framework,
+				ReactiveSwift.framework,
+				RxSwift.framework,
 			);
 			name = "Copy Carthage Frameworks";
 			outputPaths = (
@@ -322,47 +332,56 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1401BF6B208BE06F00F7D144 /* Sources */ = {
+		2690BE082CD937BA95B24615 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1401BF6C208BE07300F7D144 /* ResponseTests.swift in Sources */,
+				E7FB7CD2CDCB30DC64D90BBD /* SignalProducerAvailability.swift in Sources */,
+				903C6932A6B6AC06B716D024 /* SignalProducer+ModelMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DFFA646FC7D42FA01AA0820 /* Sources */ = {
+		40C9944DCB2B5466D3D8DE1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E351B082C1CCFC334E871CD3 /* ObservableAvailability.swift in Sources */,
-				F8AC1EA7F4799AE55A6192B2 /* Observable+ModelMapper.swift in Sources */,
-				015F257888D40C89BF2EFEB3 /* Single+ModelMapper.swift in Sources */,
+				F85B2B687754019FE5B8EE11 /* Array+Shims.swift in Sources */,
+				A7973FE26E9E11E3E461A80D /* Response+ModelMapper.swift in Sources */,
+				C78DCD213E40FB52DD2FB77D /* ResponseAvailability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3A55D9FF29955E005F9A6FB /* Sources */ = {
+		613E1F513CF69AB0B5983DD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDA8D11FB94BD4CBB262F4A1 /* Array+Shims.swift in Sources */,
-				A926A79832E05A85F3D67ED0 /* Response+ModelMapper.swift in Sources */,
-				FDBC44D3D255CB419AFD02B1 /* ResponseAvailability.swift in Sources */,
+				D237A5BD67941D72C32A9E04 /* ObservableAvailability.swift in Sources */,
+				E77AE05F29F74F2EB0776F6B /* Observable+ModelMapper.swift in Sources */,
+				36311EDC0665E12068FFD7DA /* Single+ModelMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F66D3324D17780DDA4DE4A54 /* Sources */ = {
+		7F70B2FF4B9DC95CAF50B059 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F761D4624D6A0A4EEB1E5F8 /* SignalProducerAvailability.swift in Sources */,
-				D8DEA602CBB5F66639927507 /* SignalProducer+ModelMapper.swift in Sources */,
+				2BE112F6F1A6F878657CDA85 /* ResponseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		98D42D99527BFB147B1A260B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Moya-ModelMapper";
+			target = 94215FD09018680C8FEC446B /* Moya-ModelMapper */;
+			targetProxy = 2675D50D207EE2AA7E44A998 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		06A6D63B479011D52B6A6940 /* Debug */ = {
+		0CDC5F04C23A9A717282FD70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -409,107 +428,7 @@
 			};
 			name = Debug;
 		};
-		3A8479510834DD7B264CE077 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
-					"$(SRCROOT)/Carthage/Build/tvOS/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
-					"$(SRCROOT)/Carthage/Build/iOS/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
-					"$(SRCROOT)/Carthage/Build/Mac/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
-					"$(SRCROOT)/Carthage/Build/watchOS/",
-					"$(inherited)",
-				);
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.ReactiveMoyaModelMapper;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		4F5C25F28A3BBFA7F8F32AF3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2,3,4";
-			};
-			name = Release;
-		};
-		51503D918EB231B186B29406 /* Debug */ = {
+		1842AF2850323A4CF5505C1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -556,219 +475,7 @@
 			};
 			name = Debug;
 		};
-		64F2A04A038E4C1914441403 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
-					"$(SRCROOT)/Carthage/Build/tvOS/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
-					"$(SRCROOT)/Carthage/Build/iOS/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
-					"$(SRCROOT)/Carthage/Build/Mac/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
-					"$(SRCROOT)/Carthage/Build/watchOS/",
-					"$(inherited)",
-				);
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.MoyaModelMapper;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		65A2F1985C652AB96F7FAFA3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
-					"$(SRCROOT)/Carthage/Build/tvOS/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
-					"$(SRCROOT)/Carthage/Build/iOS/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
-					"$(SRCROOT)/Carthage/Build/Mac/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
-					"$(SRCROOT)/Carthage/Build/watchOS/",
-					"$(inherited)",
-				);
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.RxMoyaModelMapper;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		6D051DD7FF0035537D82A8E4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				CLANG_ENABLE_MODULES = YES;
-				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
-					"$(SRCROOT)/Carthage/Build/tvOS/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
-					"$(SRCROOT)/Carthage/Build/iOS/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
-					"$(SRCROOT)/Carthage/Build/Mac/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
-					"$(SRCROOT)/Carthage/Build/watchOS/",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.MoyaModelMapperTests;
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		7BF75936688531758F7414F8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
-					"$(SRCROOT)/Carthage/Build/tvOS/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
-					"$(SRCROOT)/Carthage/Build/iOS/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
-					"$(SRCROOT)/Carthage/Build/Mac/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
-					"$(SRCROOT)/Carthage/Build/watchOS/",
-					"$(inherited)",
-				);
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.RxMoyaModelMapper;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		7F5DBB87C9D6A805ECBB841E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				CLANG_ENABLE_MODULES = YES;
-				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
-					"$(SRCROOT)/Carthage/Build/tvOS/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
-					"$(SRCROOT)/Carthage/Build/iOS/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
-					"$(SRCROOT)/Carthage/Build/Mac/",
-					"$(inherited)",
-				);
-				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
-					"$(SRCROOT)/Carthage/Build/watchOS/",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.MoyaModelMapperTests;
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		ADBFDA93FD67CED2317853D5 /* Debug */ = {
+		2CD0859B873C5A412C4D0ED4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -829,55 +536,365 @@
 			};
 			name = Debug;
 		};
+		7C0DA45C77AB0037A3399597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
+					"$(SRCROOT)/Carthage/Build/tvOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
+					"$(SRCROOT)/Carthage/Build/iOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(SRCROOT)/Carthage/Build/Mac/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
+					"$(SRCROOT)/Carthage/Build/watchOS/",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.MoyaModelMapperTests;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		ABFD28CD52A322A5D6CF5761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
+					"$(SRCROOT)/Carthage/Build/tvOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
+					"$(SRCROOT)/Carthage/Build/iOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(SRCROOT)/Carthage/Build/Mac/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
+					"$(SRCROOT)/Carthage/Build/watchOS/",
+					"$(inherited)",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.RxMoyaModelMapper;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		B7DD6E2CFD007A70F51CADCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+			};
+			name = Release;
+		};
+		C25E30E897A731DA6F673A12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
+					"$(SRCROOT)/Carthage/Build/tvOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
+					"$(SRCROOT)/Carthage/Build/iOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(SRCROOT)/Carthage/Build/Mac/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
+					"$(SRCROOT)/Carthage/Build/watchOS/",
+					"$(inherited)",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.MoyaModelMapper;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		D7F090BDF4BB1159D9CA9A35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
+					"$(SRCROOT)/Carthage/Build/tvOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
+					"$(SRCROOT)/Carthage/Build/iOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(SRCROOT)/Carthage/Build/Mac/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
+					"$(SRCROOT)/Carthage/Build/watchOS/",
+					"$(inherited)",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.RxMoyaModelMapper;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		E586EAE4D667B579E879276B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
+					"$(SRCROOT)/Carthage/Build/tvOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
+					"$(SRCROOT)/Carthage/Build/iOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(SRCROOT)/Carthage/Build/Mac/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
+					"$(SRCROOT)/Carthage/Build/watchOS/",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.MoyaModelMapperTests;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		E6C8E26B85710393F70EFDCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
+					"$(SRCROOT)/Carthage/Build/tvOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
+					"$(SRCROOT)/Carthage/Build/iOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(SRCROOT)/Carthage/Build/Mac/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
+					"$(SRCROOT)/Carthage/Build/watchOS/",
+					"$(inherited)",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.ReactiveMoyaModelMapper;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06BF064201162C130866B3AE /* Build configuration list for PBXNativeTarget "RxMoya-ModelMapper" */ = {
+		33889D6209379FC0BF7B1D55 /* Build configuration list for PBXProject "Moya-ModelMapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7BF75936688531758F7414F8 /* Release */,
-				65A2F1985C652AB96F7FAFA3 /* Debug */,
+				2CD0859B873C5A412C4D0ED4 /* Debug */,
+				B7DD6E2CFD007A70F51CADCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		569DF2FEA2140009265381EA /* Build configuration list for PBXProject "Moya-ModelMapper" */ = {
+		3BA59FEA80802F32F8FEE85C /* Build configuration list for PBXNativeTarget "ReactiveMoya-ModelMapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ADBFDA93FD67CED2317853D5 /* Debug */,
-				4F5C25F28A3BBFA7F8F32AF3 /* Release */,
+				E6C8E26B85710393F70EFDCB /* Release */,
+				0CDC5F04C23A9A717282FD70 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58F82C9A422FC7410AC2E6F1 /* Build configuration list for PBXNativeTarget "Moya-ModelMapper" */ = {
+		70A3B0C97634DC0E63D40CD2 /* Build configuration list for PBXNativeTarget "Moya-ModelMapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				64F2A04A038E4C1914441403 /* Release */,
-				51503D918EB231B186B29406 /* Debug */,
+				C25E30E897A731DA6F673A12 /* Release */,
+				1842AF2850323A4CF5505C1D /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64508E5948D10721D34433F8 /* Build configuration list for PBXNativeTarget "ReactiveMoya-ModelMapper" */ = {
+		B1181D531F5EBB27AA3451C0 /* Build configuration list for PBXNativeTarget "RxMoya-ModelMapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A8479510834DD7B264CE077 /* Release */,
-				06A6D63B479011D52B6A6940 /* Debug */,
+				ABFD28CD52A322A5D6CF5761 /* Release */,
+				D7F090BDF4BB1159D9CA9A35 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C958E394E0B50649073DE62A /* Build configuration list for PBXNativeTarget "Moya-ModelMapperTests" */ = {
+		D0330C1F82E76A4F511990F2 /* Build configuration list for PBXNativeTarget "Moya-ModelMapperTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7F5DBB87C9D6A805ECBB841E /* Release */,
-				6D051DD7FF0035537D82A8E4 /* Debug */,
+				7C0DA45C77AB0037A3399597 /* Release */,
+				E586EAE4D667B579E879276B /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6CC3936429952457053FF834 /* Project object */;
+	rootObject = DB913DA46952A671AC32A13A /* Project object */;
 }

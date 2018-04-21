@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "33F6215E8933C79CEB6706CA"
+               BlueprintIdentifier = "6AF451CBE94A1F9E57DE5DB3"
                BlueprintName = "Moya-ModelMapperTests"
                ReferencedContainer = "container:Moya-ModelMapper.xcodeproj"
                BuildableName = "Moya-ModelMapperTests.xctest">
@@ -35,7 +35,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "33F6215E8933C79CEB6706CA"
+               BlueprintIdentifier = "6AF451CBE94A1F9E57DE5DB3"
                BlueprintName = "Moya-ModelMapperTests"
                ReferencedContainer = "container:Moya-ModelMapper.xcodeproj"
                BuildableName = "Moya-ModelMapperTests.xctest">

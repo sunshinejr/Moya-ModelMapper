@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3F5D32FDCF2E75130AE7A03F"
+               BlueprintIdentifier = "5C206CBAFBC7BB1C07AC3444"
                BuildableName = "RxMoya_ModelMapper.framework"
                BlueprintName = "RxMoya-ModelMapper"
                ReferencedContainer = "container:Moya-ModelMapper.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3F5D32FDCF2E75130AE7A03F"
+            BlueprintIdentifier = "5C206CBAFBC7BB1C07AC3444"
             BuildableName = "RxMoya_ModelMapper.framework"
             BlueprintName = "RxMoya-ModelMapper"
             ReferencedContainer = "container:Moya-ModelMapper.xcodeproj">
