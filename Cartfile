@@ -1,2 +1,2 @@
 github "Moya/Moya" ~> 11.0
-github "lyft/mapper" "2410a32692d93dd19916765b910ec38fc52581f1"
+github "lyft/mapper" ~> 8.0

@@ -1,11 +1,3 @@
-//
-//  ResponseAvailability.swift
-//  Pods
-//
-//  Created by sunshinejr on 26.08.2017.
-//  Copyright © 2017 sunshinejr. All rights reserved.
-//
-
 import Foundation
 import Moya
 import Mapper

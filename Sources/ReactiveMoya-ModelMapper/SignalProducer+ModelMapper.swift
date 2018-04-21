@@ -1,11 +1,3 @@
-//
-//  SignalProducer+ModelMapper.swift
-//  Pods
-//
-//  Created by sunshinejr on 03.02.2016.
-//  Copyright © 2016 sunshinejr. All rights reserved.
-//
-
 import ReactiveSwift
 import Moya
 import Mapper
@@ -26,10 +18,21 @@ extension SignalProducerProtocol where Value == Moya.Response, Error == MoyaErro
     
     /// Maps data received from the signal into an array of objects which implement the Mappable
     /// protocol.
-    /// If the conversion fails, the signal errors.
+    /// If the conversion fails at any object, the error event is sent. If you want to remove the object
+    /// from an array on error, use `compactMap()` instead.
     public func map<T: Mappable>(to type: [T].Type, keyPath: String? = nil) -> SignalProducer<[T], MoyaError> {
         return producer.flatMap(.latest) { response -> SignalProducer<[T], Error> in
             return unwrapThrowable { try response.map(to: type, keyPath: keyPath) }
+        }
+    }
+
+    /// Maps data received from the signal into an array of objects which implement the Mappable
+    /// protocol.
+    /// If the conversion fails at any object, it's removed from the response array. If you want to throw
+    /// an error on any failure, use `map()` instead.
+    public func compactMap<T: Mappable>(to type: [T].Type, keyPath: String? = nil) -> SignalProducer<[T], MoyaError> {
+        return producer.flatMap(.latest) { response -> SignalProducer<[T], Error> in
+            return unwrapThrowable { try response.compactMap(to: type, keyPath: keyPath) }
         }
     }
 }
