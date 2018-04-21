@@ -13,9 +13,6 @@ jobs:
       - restore_cache:
           keys:
             - v1-build-{{ .Branch }}-
-      - run: 
-          name: Update SPM
-          command: swift update package
       - save_cache:
           key: v1-build-{{ .Branch }}-{{ epoch }}
           paths:
