@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "135A803413C025EE85FBC67B"
+               BlueprintIdentifier = "88EFD3E477EDA79AE6ACB09A"
                BuildableName = "ReactiveMoya_ModelMapper.framework"
                BlueprintName = "ReactiveMoya-ModelMapper"
                ReferencedContainer = "container:Moya-ModelMapper.xcodeproj">
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "135A803413C025EE85FBC67B"
+            BlueprintIdentifier = "88EFD3E477EDA79AE6ACB09A"
             BuildableName = "ReactiveMoya_ModelMapper.framework"
             BlueprintName = "ReactiveMoya-ModelMapper"
             ReferencedContainer = "container:Moya-ModelMapper.xcodeproj">
