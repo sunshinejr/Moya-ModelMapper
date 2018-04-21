@@ -1,11 +1,3 @@
-//
-//  SignalProducer+ModelMapper.swift
-//  Pods
-//
-//  Created by sunshinejr on 03.02.2016.
-//  Copyright © 2016 sunshinejr. All rights reserved.
-//
-
 import ReactiveSwift
 import Moya
 import Mapper

@@ -1,11 +1,3 @@
-//
-//  Response+ModelMapper.swift
-//  Pods
-//
-//  Created by sunshinejr on 02.02.2016.
-//  Copyright © 2016 sunshinejr. All rights reserved.
-//
-
 import Foundation
 import Moya
 import Mapper
