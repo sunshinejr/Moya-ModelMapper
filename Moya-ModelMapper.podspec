@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Moya-ModelMapper"
-  s.version          = "7.0.2"
+  s.version          = "7.1.0"
   s.summary          = "ModelMapper bindings for Moya."
   s.description      = <<-EOS
   [ModelMapper](https://github.com/lyft/mapper) bindings for

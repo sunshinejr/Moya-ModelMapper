@@ -1,5 +1,8 @@
 # Next
 
+# 7.1.0
+- Added `compactMap` as a variation of mapping an array that doesn't fail when one of the objects fails
+
 # 7.0.2
 - Fixed a bug that Single extensions still had observing on schedulers that Observable extensions had removed in Moya-ModelMapper 6.0.
 
