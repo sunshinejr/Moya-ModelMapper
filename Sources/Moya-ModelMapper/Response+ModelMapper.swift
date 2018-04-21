@@ -67,7 +67,7 @@ public extension Response {
     }
 
     public func compactMap<T: Mappable>(to type: [T].Type, keyPath: String?) throws -> [T] {
-        guard let keyPath = keyPath else { return try map(to: type) }
+        guard let keyPath = keyPath else { return try compactMap(to: type) }
 
         guard let jsonDictionary = try mapJSON() as? NSDictionary,
             let objectArray = jsonDictionary.value(forKeyPath:keyPath) as? [NSDictionary] else {
