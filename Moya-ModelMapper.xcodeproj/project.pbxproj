@@ -10,6 +10,7 @@
 		14A1608B208BF8BC00409F28 /* ObservableResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1608A208BF8BC00409F28 /* ObservableResponseTests.swift */; };
 		14A1608D208BF8D500409F28 /* SingleResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1608C208BF8D500409F28 /* SingleResponseTests.swift */; };
 		14A1608F208BF96100409F28 /* SignalProducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1608E208BF96100409F28 /* SignalProducerTests.swift */; };
+		14A16092208BFAFC00409F28 /* TestMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A16091208BFAFC00409F28 /* TestMappable.swift */; };
 		2BE112F6F1A6F878657CDA85 /* ResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EEB87EA4E52ADED6B68C53 /* ResponseTests.swift */; };
 		36311EDC0665E12068FFD7DA /* Single+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AA3084E44F648DF19950F0 /* Single+ModelMapper.swift */; };
 		5DDBE412EE6BD5A372A75ADC /* Moya_ModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE81E613E56926FBB64DDF9 /* Moya_ModelMapper.framework */; };
@@ -38,6 +39,7 @@
 		14A1608A208BF8BC00409F28 /* ObservableResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObservableResponseTests.swift; path = "Tests/Moya-ModelMapperTests/ObservableResponseTests.swift"; sourceTree = "<group>"; };
 		14A1608C208BF8D500409F28 /* SingleResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SingleResponseTests.swift; path = "Tests/Moya-ModelMapperTests/SingleResponseTests.swift"; sourceTree = "<group>"; };
 		14A1608E208BF96100409F28 /* SignalProducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignalProducerTests.swift; path = "Tests/Moya-ModelMapperTests/SignalProducerTests.swift"; sourceTree = "<group>"; };
+		14A16091208BFAFC00409F28 /* TestMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestMappable.swift; path = "Tests/Moya-ModelMapperTests/Helpers/TestMappable.swift"; sourceTree = "<group>"; };
 		16AB7B9A13A60AF4F158CB42 /* Array+Shims.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Shims.swift"; path = "Sources/Moya-ModelMapper/Array+Shims.swift"; sourceTree = "<group>"; };
 		1D9646B99830E83EF28B38DC /* ObservableAvailability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableAvailability.swift; path = "Sources/RxMoya-ModelMapper/ObservableAvailability.swift"; sourceTree = "<group>"; };
 		25AA3084E44F648DF19950F0 /* Single+ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Single+ModelMapper.swift"; path = "Sources/RxMoya-ModelMapper/Single+ModelMapper.swift"; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 			name = "RxMoya-ModelMapper";
 			sourceTree = "<group>";
 		};
+		14A16090208BFAD400409F28 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				14A16091208BFAFC00409F28 /* TestMappable.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		21EC65802DDE30C2DFDC38F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +151,7 @@
 		710670E886E375696B9F9468 /* Moya-ModelMapperTests */ = {
 			isa = PBXGroup;
 			children = (
+				14A16090208BFAD400409F28 /* Helpers */,
 				14A1608A208BF8BC00409F28 /* ObservableResponseTests.swift */,
 				B7EEB87EA4E52ADED6B68C53 /* ResponseTests.swift */,
 				14A1608C208BF8D500409F28 /* SingleResponseTests.swift */,
@@ -375,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BE112F6F1A6F878657CDA85 /* ResponseTests.swift in Sources */,
+				14A16092208BFAFC00409F28 /* TestMappable.swift in Sources */,
 				14A1608F208BF96100409F28 /* SignalProducerTests.swift in Sources */,
 				14A1608D208BF8D500409F28 /* SingleResponseTests.swift in Sources */,
 				14A1608B208BF8BC00409F28 /* ObservableResponseTests.swift in Sources */,

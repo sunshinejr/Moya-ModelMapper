@@ -11,22 +11,7 @@ final class SinglaProducerReponseTests: QuickSpec {
     override func spec() {
         describe("compactMap") {
             it("should map all objects as everything is mappable") {
-                let json = """
-[
-   {
-      "test1":"test1",
-      "test2":"test2"
-   },
-   {
-      "test1":"test1",
-      "test2":"test2"
-   },
-   {
-      "test1":"test1"
-   }
-]
-"""
-
+                let json = testValidJsonForCompactMap
                 let data = json.data(using: .utf8)!
                 let response = Response(statusCode: 200, data: data)
                 var mapped: [Test]?
@@ -46,22 +31,7 @@ final class SinglaProducerReponseTests: QuickSpec {
             }
 
             it("should map only two objects as one is not mappable") {
-                let json = """
-[
-   {
-      "test1":"test1",
-      "test2":"test2"
-   },
-   {
-      "test1":"test1",
-      "test2":"test2"
-   },
-   {
-      "test2":"test2"
-   }
-]
-"""
-
+                let json = testInvalidJsonForCompactMap
                 let data = json.data(using: .utf8)!
                 let response = Response(statusCode: 200, data: data)
                 var mapped: [Test]?
