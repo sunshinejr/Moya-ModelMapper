@@ -6,6 +6,20 @@ platforms = [
     watchos("2.0")
 ]
 
+moya_model_mapper_tests = new_target do |target|
+  target.name = "Moya-ModelMapperTests"
+  target.platforms = platforms
+  target.language = language
+  target.info_plist = "Tests/Info.plist"
+  target.bundle_id = "com.sunshinejr.MoyaModelMapperTests"
+  target.include_files = ["Tests/**/*.swift"]
+  target.exclude_files = []
+  target.resource_files = ["Tests/**/*.png"]
+  target.dependencies = ["Quick", "Nimble"]
+  target.type = :unit_test_bundle
+  target.enable_code_coverage = true
+end
+
 moya_model_mapper = new_target do |target|
   target.name = "Moya-ModelMapper"
   target.platforms = platforms
@@ -16,6 +30,7 @@ moya_model_mapper = new_target do |target|
   target.exclude_files = []
   target.is_safe_for_extensions = false
   target.dependencies = ["Moya"]
+  target.test_target = moya_model_mapper_tests
 end
 
 reactive_moya_model_mapper = new_target do |target|
@@ -40,20 +55,6 @@ rx_moya_model_mapper = new_target do |target|
   target.exclude_files = []
   target.is_safe_for_extensions = false
   target.dependencies = ["Moya-ModelMapper", "RxSwift"]
-end
-
-moya_model_mapper_tests = new_target do |target|
-  target.name = "Moya-ModelMapperTests"
-  target.platforms = platforms
-  target.language = language
-  target.info_plist = "Tests/Info.plist"
-  target.bundle_id = "com.sunshinejr.MoyaModelMapperTests"
-  target.include_files = ["Tests/**/*.swift"]
-  target.exclude_files = []
-  target.resource_files = ["Tests/**/*.png"]
-  target.dependencies = ["Quick", "Nimble"]
-  target.type = :unit_test_bundle
-  target.enable_code_coverage = true
 end
 
 project.name = "Moya-ModelMapper"
