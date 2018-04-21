@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		12CED7B02E5842404390863C /* Moya_ModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79D259FB2830ACF6B15C2A4 /* Moya_ModelMapper.framework */; };
+		14D1A46A208B928D00985094 /* Array+Shims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D1A469208B928D00985094 /* Array+Shims.swift */; };
 		4026154FC423DA1242D408B2 /* SignalProducerAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC7B1F59762F9A0E4952FA /* SignalProducerAvailability.swift */; };
 		5FBF3E5C8635165E47D7951E /* ResponseAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08BBAB8D616ED9113151EF8 /* ResponseAvailability.swift */; };
 		7F259862091BA02C8615A2B2 /* ObservableAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD01E5FDD840D057719FD2F /* ObservableAvailability.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14D1A469208B928D00985094 /* Array+Shims.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Array+Shims.swift"; path = "Sources/Moya-ModelMapper/Array+Shims.swift"; sourceTree = "<group>"; };
 		1DD01E5FDD840D057719FD2F /* ObservableAvailability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableAvailability.swift; path = "Sources/RxMoya-ModelMapper/ObservableAvailability.swift"; sourceTree = "<group>"; };
 		3D603A24D47377D95A284401 /* Observable+ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Observable+ModelMapper.swift"; path = "Sources/RxMoya-ModelMapper/Observable+ModelMapper.swift"; sourceTree = "<group>"; };
 		3FCC7B1F59762F9A0E4952FA /* SignalProducerAvailability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignalProducerAvailability.swift; path = "Sources/ReactiveMoya-ModelMapper/SignalProducerAvailability.swift"; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		90CA4F2102B75757EC5BF263 /* Moya-ModelMapper */ = {
 			isa = PBXGroup;
 			children = (
+				14D1A469208B928D00985094 /* Array+Shims.swift */,
 				B236D13D871453966419A2B1 /* Response+ModelMapper.swift */,
 				A08BBAB8D616ED9113151EF8 /* ResponseAvailability.swift */,
 			);
@@ -254,6 +257,7 @@
 			files = (
 				9837A0AEEF5D3EC6CD907707 /* Response+ModelMapper.swift in Sources */,
 				5FBF3E5C8635165E47D7951E /* ResponseAvailability.swift in Sources */,
+				14D1A46A208B928D00985094 /* Array+Shims.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
