@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Moya-ModelMapper"
-  s.version          = "7.1.0"
+  s.version          = "8.0.0"
   s.summary          = "ModelMapper bindings for Moya."
   s.description      = <<-EOS
   [ModelMapper](https://github.com/lyft/mapper) bindings for
@@ -28,7 +28,8 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.10'
   s.watchos.deployment_target = '2.0'
   s.tvos.deployment_target = '9.0'
-
+  s.swift_version = '4.0'
+  s.cocoapods_version = '>= 1.4.0'
   s.requires_arc = true
   s.default_subspec = "Core"
 

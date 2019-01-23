@@ -10,11 +10,11 @@ let package = Package(
         .library(name: "RxMoya-ModelMapper", targets: ["RxMoya-ModelMapper"])
     ],
     dependencies: [
-        .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "11.0.0")),
-        .package(url: "https://github.com/lyft/mapper.git", .upToNextMajor(from: "7.0.0")),
+        .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "12.0.0")),
+        .package(url: "https://github.com/lyft/mapper.git", .upToNextMajor(from: "9.0.0")),
         .package(url: "https://github.com/Quick/Quick.git", .upToNextMajor(from: "1.3.0")),
         .package(url: "https://github.com/Quick/Nimble.git", .upToNextMajor(from: "7.0.3")),
-        .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", .upToNextMajor(from: "3.0.0")),
+        .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", .upToNextMajor(from: "4.0.0")),
         .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "4.0.0"))
     ],
     targets: [

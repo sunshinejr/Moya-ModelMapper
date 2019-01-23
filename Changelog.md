@@ -1,5 +1,10 @@
 # Next
 
+# 8.0.0
+- Moya updated to 12.*
+- ReactiveSwift updated to 4.*
+- Mapper updated to 9.*
+
 # 7.1.0
 - Added `compactMap` as a variation of mapping an array that doesn't fail when one of the objects fails
 
