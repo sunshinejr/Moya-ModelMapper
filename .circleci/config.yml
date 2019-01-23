@@ -17,6 +17,9 @@ jobs:
           key: v1-build-{{ .Branch }}-{{ epoch }}
           paths:
             - .build
+      - run:
+          name: swift package update
+          command: swift package update
       - run: 
           name: swift build
           command: swift build
