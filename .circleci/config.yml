@@ -7,7 +7,7 @@ jobs:
     environment:
       LANG: en_US.UTF-8
     macos:
-      xcode: '9.3.0'
+      xcode: '10.0.0'
     steps:
       - checkout
       - restore_cache:
@@ -17,9 +17,6 @@ jobs:
           key: v1-build-{{ .Branch }}-{{ epoch }}
           paths:
             - .build
-      - run:
-          name: swift package update
-          command: swift package update
       - run: 
           name: swift build
           command: swift build
