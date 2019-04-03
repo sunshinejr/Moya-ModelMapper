@@ -1,4 +1,4 @@
-language = swift("4.0")
+language = swift("5.0")
 platforms = [
     macos("10.10"),
     ios("8.0"),
