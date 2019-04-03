@@ -58,12 +58,15 @@ ready for production use.
 Below is a table that shows which version of Moya you should use for
 your Swift version.
 
-| Swift | Moya          | RxMoya        | ReactiveMoya  |
-| ----- | ------------- |---------------|---------------|
-| 4.X   | >= 9.0        | >= 10.0       | >= 9.0        |
-| 3.X   | 8.0.0 - 8.0.5 | 8.0.0 - 8.0.5 | 8.0.0 - 8.0.5 |
-| 2.3   | 7.0.2 - 7.0.4 | 7.0.2 - 7.0.4 | 7.0.2 - 7.0.4 |
-| 2.2   | <= 7.0.1      | <= 7.0.1      | <= 7.0.1      |
+| Swift | Moya           | RxMoya          | ReactiveMoya   |
+| ----- | -------------- |---------------- |--------------- |
+| 5.X   | >= 13.0.0      | >= 13.0.0       | >= 13.0.0      |
+| 4.X   | 9.0.0 - 12.0.1 | 10.0.0 - 12.0.1 | 9.0.0 - 12.0.1 |
+| 3.X   | 8.0.0 - 8.0.5  | 8.0.0 - 8.0.5   | 8.0.0 - 8.0.5  |
+| 2.3   | 7.0.2 - 7.0.4  | 7.0.2 - 7.0.4   | 7.0.2 - 7.0.4  |
+| 2.2   | <= 7.0.1       | <= 7.0.1        | <= 7.0.1       |
+
+_Note: If you are using Swift 4.2 in your project, but you are using Xcode 10.2, Moya 13 should work correctly even though we use Swift 5.0._
 
 **Upgrading to a new major version of Moya? Check out our [migration guides](https://github.com/Moya/Moya/blob/master/docs/MigrationGuides).**
 
@@ -72,7 +75,7 @@ your Swift version.
 To integrate using Apple's Swift package manager, add the following as a dependency to your `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "11.0.0"))
+.package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "13.0.0-beta.1"))
 ```
 
 and then specify `"Moya"` as a dependency of the Target in which you wish to use Moya.
@@ -80,7 +83,7 @@ If you want to use reactive extensions, add also `"ReactiveMoya"` or `"RxMoya"` 
 Here's an example `PackageDescription`:
 
 ```swift
-// swift-tools-version:4.0
+// swift-tools-version:5.0
 import PackageDescription
 
 let package = Package(
@@ -91,7 +94,7 @@ let package = Package(
             targets: ["MyPackage"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "12.0.0"))
+        .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "13.0.0-beta.1"))
     ],
     targets: [
         .target(
@@ -108,15 +111,15 @@ Note that as of Moya 10, SPM only works with Swift 4 toolchain and greater.
 For Moya, use the following entry in your Podfile:
 
 ```rb
-pod 'Moya', '~> 12.0'
+pod 'Moya', '13.0.0-beta.1'
 
 # or 
 
-pod 'Moya/RxSwift', '~> 12.0'
+pod 'Moya/RxSwift', '13.0.0-beta.1'
 
 # or
 
-pod 'Moya/ReactiveSwift', '~> 12.0'
+pod 'Moya/ReactiveSwift', '13.0.0-beta.1'
 ```
 
 Then run `pod install`.
