@@ -28,28 +28,28 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.10'
   s.watchos.deployment_target = '3.0'
   s.tvos.deployment_target = '9.0'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
   s.cocoapods_version = '>= 1.4.0'
   s.requires_arc = true
   s.default_subspec = "Core"
 
   s.subspec "Core" do |ss|
     ss.source_files  = "Sources/Moya-ModelMapper/*.swift"
-    ss.dependency "Moya", "~> 12.0"
-    ss.dependency "ModelMapper"
+    ss.dependency "Moya", "13.0.0-beta.1"
+    ss.dependency "ModelMapper", "~> 10.0"
     ss.framework  = "Foundation"
   end
 
   s.subspec "RxSwift" do |ss|
     ss.source_files = "Sources/RxMoya-ModelMapper/*.swift"
-    ss.dependency "Moya/RxSwift", "~> 12.0"
+    ss.dependency "Moya/RxSwift", "13.0.0-beta.1"
     ss.dependency "Moya-ModelMapper/Core"
     ss.dependency "RxSwift"
   end
 
   s.subspec "ReactiveSwift" do |ss|
     ss.source_files = "Sources/ReactiveMoya-ModelMapper/*.swift"
-    ss.dependency "Moya/ReactiveSwift", "~> 12.0"
+    ss.dependency "Moya/ReactiveSwift", "13.0.0-beta.1"
     ss.dependency "Moya-ModelMapper/Core"
     ss.dependency "ReactiveSwift"
   end
