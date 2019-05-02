@@ -1,2 +1,2 @@
-github "Moya/Moya" "13.0.0-beta.1"
+github "Moya/Moya" "13.0.0"
 github "lyft/mapper" ~> 10.0
