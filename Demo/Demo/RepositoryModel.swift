@@ -12,12 +12,12 @@ import Mapper
 struct Repository: Mappable {
     
     let identifier: Int
-    let language: String
+    let language: String?
     let url: String?
     
     init(map: Mapper) throws {
         try identifier = map.from("id")
-        try language = map.from("language")
+        language = map.optionalFrom("language")
         url = map.optionalFrom("url")
     }
     
