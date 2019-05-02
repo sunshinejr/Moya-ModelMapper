@@ -1,5 +1,8 @@
 # Next
 
+# 9.0.0
+- Moya updated to 13.0.0
+
 # 9.0.0-beta.1
 - Moya updated to 13.0.0-beta.1
 - Mapper updated to 10.0
