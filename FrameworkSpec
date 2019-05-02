@@ -21,7 +21,9 @@ moya_model_mapper_tests = new_target do |target|
     "Result",
     "Alamofire",
     "ReactiveSwift",
-    "RxSwift"
+    "RxSwift",
+    "Moya",
+    "Mapper"
     ]
   target.type = :unit_test_bundle
   target.enable_code_coverage = true
@@ -50,6 +52,7 @@ reactive_moya_model_mapper = new_target do |target|
   target.exclude_files = []
   target.is_safe_for_extensions = false
   target.dependencies = ["Moya-ModelMapper", "ReactiveSwift"]
+  target.test_target = moya_model_mapper_tests
 end
 
 rx_moya_model_mapper = new_target do |target|
@@ -62,6 +65,7 @@ rx_moya_model_mapper = new_target do |target|
   target.exclude_files = []
   target.is_safe_for_extensions = false
   target.dependencies = ["Moya-ModelMapper", "RxSwift"]
+  target.test_target = moya_model_mapper_tests
 end
 
 project.name = "Moya-ModelMapper"
