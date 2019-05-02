@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CB01E6B39A00A8E944BEB061"
-               BuildableName = "Moya_ModelMapper.framework"
-               BlueprintName = "Moya-ModelMapper"
+               BlueprintIdentifier = "6AF451CBE94A1F9E57DE5DB3"
+               BuildableName = "Moya-ModelMapperTests.xctest"
+               BlueprintName = "Moya-ModelMapperTests"
                ReferencedContainer = "container:Moya-ModelMapper.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,19 +26,29 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "07A9CF174BAC76BEF41F0DB6"
+               BlueprintIdentifier = "6AF451CBE94A1F9E57DE5DB3"
                BuildableName = "Moya-ModelMapperTests.xctest"
                BlueprintName = "Moya-ModelMapperTests"
                ReferencedContainer = "container:Moya-ModelMapper.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6AF451CBE94A1F9E57DE5DB3"
+            BuildableName = "Moya-ModelMapperTests.xctest"
+            BlueprintName = "Moya-ModelMapperTests"
+            ReferencedContainer = "container:Moya-ModelMapper.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -55,9 +65,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CB01E6B39A00A8E944BEB061"
-            BuildableName = "Moya_ModelMapper.framework"
-            BlueprintName = "Moya-ModelMapper"
+            BlueprintIdentifier = "6AF451CBE94A1F9E57DE5DB3"
+            BuildableName = "Moya-ModelMapperTests.xctest"
+            BlueprintName = "Moya-ModelMapperTests"
             ReferencedContainer = "container:Moya-ModelMapper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -70,6 +80,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6AF451CBE94A1F9E57DE5DB3"
+            BuildableName = "Moya-ModelMapperTests.xctest"
+            BlueprintName = "Moya-ModelMapperTests"
+            ReferencedContainer = "container:Moya-ModelMapper.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

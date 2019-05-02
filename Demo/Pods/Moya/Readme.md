@@ -7,6 +7,7 @@
 [![CircleCI](https://img.shields.io/circleci/project/github/Moya/Moya/master.svg)](https://circleci.com/gh/Moya/Moya/tree/master)
 [![codecov.io](https://codecov.io/github/Moya/Moya/coverage.svg?branch=master)](https://codecov.io/github/Moya/Moya?branch=master)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Accio supported](https://img.shields.io/badge/Accio-supported-0A7CF5.svg?style=flat)](https://github.com/JamitLabs/Accio)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/Moya.svg)](https://cocoapods.org/pods/Moya)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
@@ -75,7 +76,7 @@ _Note: If you are using Swift 4.2 in your project, but you are using Xcode 10.2,
 To integrate using Apple's Swift package manager, add the following as a dependency to your `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "13.0.0-beta.1"))
+.package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "13.0.0"))
 ```
 
 and then specify `"Moya"` as a dependency of the Target in which you wish to use Moya.
@@ -94,7 +95,7 @@ let package = Package(
             targets: ["MyPackage"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "13.0.0-beta.1"))
+        .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "13.0.0"))
     ],
     targets: [
         .target(
@@ -106,20 +107,24 @@ let package = Package(
 
 Note that as of Moya 10, SPM only works with Swift 4 toolchain and greater.
 
+### Accio
+
+[Accio](https://github.com/JamitLabs/Accio) is a dependency manager based on SwiftPM which can build frameworks for iOS/macOS/tvOS/watchOS. Therefore the integration steps of Moya are exactly the same as described above. Once your `Package.swift` file is configured, run `accio update` instead of `swift package update`.
+
 ### CocoaPods
 
 For Moya, use the following entry in your Podfile:
 
 ```rb
-pod 'Moya', '13.0.0-beta.1'
+pod 'Moya', '13.0.0'
 
 # or 
 
-pod 'Moya/RxSwift', '13.0.0-beta.1'
+pod 'Moya/RxSwift', '13.0.0'
 
 # or
 
-pod 'Moya/ReactiveSwift', '13.0.0-beta.1'
+pod 'Moya/ReactiveSwift', '13.0.0'
 ```
 
 Then run `pod install`.
