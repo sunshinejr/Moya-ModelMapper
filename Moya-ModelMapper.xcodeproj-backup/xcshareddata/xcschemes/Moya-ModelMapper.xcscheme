@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CB01E6B39A00A8E944BEB061"
+               BlueprintIdentifier = "94215FD09018680C8FEC446B"
                BuildableName = "Moya_ModelMapper.framework"
                BlueprintName = "Moya-ModelMapper"
                ReferencedContainer = "container:Moya-ModelMapper.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "07A9CF174BAC76BEF41F0DB6"
+               BlueprintIdentifier = "6AF451CBE94A1F9E57DE5DB3"
                BuildableName = "Moya-ModelMapperTests.xctest"
                BlueprintName = "Moya-ModelMapperTests"
                ReferencedContainer = "container:Moya-ModelMapper.xcodeproj">
@@ -55,7 +55,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CB01E6B39A00A8E944BEB061"
+            BlueprintIdentifier = "94215FD09018680C8FEC446B"
             BuildableName = "Moya_ModelMapper.framework"
             BlueprintName = "Moya-ModelMapper"
             ReferencedContainer = "container:Moya-ModelMapper.xcodeproj">

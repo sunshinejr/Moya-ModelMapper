@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         provider = MoyaProvider<GitHub>()
         
         // Example of mapping array of objects
-        provider.request(GitHub.repos("mjacko")) { (result) in
+        provider.request(GitHub.repos("sunshinejr")) { (result) in
             if case .success(let response) = result {
                 do {
                     let repos = try response.map(to: [Repository].self)

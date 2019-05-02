@@ -10,17 +10,17 @@
 ## CocoaPods
 
 ```
-pod 'Moya-ModelMapper', '8.0.0'
+pod 'Moya-ModelMapper', '~> 9.0'
 ```
 
 The subspec if you want to use the bindings over RxSwift.
 ```
-pod 'Moya-ModelMapper/RxSwift', '8.0.0'
+pod 'Moya-ModelMapper/RxSwift', '~> 9.0'
 ```
 
 And the subspec if you want to use the bindings over ReactiveSwift.
 ```
-pod 'Moya-ModelMapper/ReactiveSwift', '8.0.0'
+pod 'Moya-ModelMapper/ReactiveSwift', '~> 9.0'
 ```
 
 ## Carthage
@@ -28,7 +28,7 @@ pod 'Moya-ModelMapper/ReactiveSwift', '8.0.0'
 Specify in Cartfile:
 
 ```
-github "sunshinejr/Moya-ModelMapper" "8.0.0"
+github "sunshinejr/Moya-ModelMapper" ~> 9.0
 ```
 
 Carthage users can point to this repository and use whichever generated framework they'd like, Moya-ModelMapper, RxMoya-ModelMapper, or ReactiveMoya-ModelMapper.
@@ -38,7 +38,7 @@ Carthage users can point to this repository and use whichever generated framewor
 Add the following as a dependency to your `Package.swift`.
 
 ```swift
-.package(url: "https://github.com/sunshinejr/Moya-ModelMapper.git", .exact("8.0.0"))
+.package(url: "https://github.com/sunshinejr/Moya-ModelMapper.git", .upToNextMajor(from: "9.0.0"))
 ```
 
 The bindings are available through `Moya_ModelMapper` module. If you are interested in reactive extensions, use `ReactiveMoya_ModelMapper` or `RxMoya_ModelMapper` respectively.
@@ -54,13 +54,13 @@ import Mapper
 struct Repository: Mappable {
 
     let identifier: Int
-    let language: String
+    let language: String? // Optional property
     let url: String? // Optional property
 
     init(map: Mapper) throws {
         try identifier = map.from("id")
-        try language = map.from("language")
-        url = map.optionalFrom("url") // Optional property
+        language = map.optionalFrom("language")
+        url = map.optionalFrom("url")
     }
 
 }
