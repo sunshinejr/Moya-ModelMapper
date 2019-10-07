@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C595A06B02D2477C1241382 /* Moya-ModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D110D873C969A7951B137607 /* Moya-ModelMapper.framework */; };
+		0C595A06B02D2477C1241382 /* Moya_ModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D110D873C969A7951B137607 /* Moya_ModelMapper.framework */; };
 		2721FADCE5FDB25B734DCCFE /* ObservableResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539A04B408AF1E5FE456E327 /* ObservableResponseTests.swift */; };
 		356ACA44EB53392E7F7EA967 /* Single+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB359DF460E32E37F603D4C /* Single+ModelMapper.swift */; };
 		50C376C4227A1BFE3F808A9F /* SingleResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3178EA21B18FF2B79C3FA04E /* SingleResponseTests.swift */; };
@@ -17,7 +17,7 @@
 		873B371C22A23232FC1627B6 /* ResponseAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55922126B30C2B6630B9E69 /* ResponseAvailability.swift */; };
 		88C16FD91FE9F148818659A6 /* SignalProducer+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC67EC99AF6E9A5F2CB5B57D /* SignalProducer+ModelMapper.swift */; };
 		99532958B23F3372AD815218 /* TestMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7952C8647C854A3B3599D059 /* TestMappable.swift */; };
-		DBC5108A70596E25C286C20A /* Moya-ModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D110D873C969A7951B137607 /* Moya-ModelMapper.framework */; };
+		DBC5108A70596E25C286C20A /* Moya_ModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D110D873C969A7951B137607 /* Moya_ModelMapper.framework */; };
 		EB62AFCC30C2F8EFB0361E0C /* Observable+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA02B0B44CC7866F0A3DE14 /* Observable+ModelMapper.swift */; };
 		ED0076D7FCFAB92EC7BFA79B /* SignalProducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28655D22B9CA03FA341E0FF1 /* SignalProducerTests.swift */; };
 		F90929FE3776DA014F84A90B /* Response+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DDE8AC90B73824F24B28ED /* Response+ModelMapper.swift */; };
@@ -52,9 +52,9 @@
 		28655D22B9CA03FA341E0FF1 /* SignalProducerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignalProducerTests.swift; path = "Tests/Moya-ModelMapperTests/SignalProducerTests.swift"; sourceTree = "<group>"; };
 		3178EA21B18FF2B79C3FA04E /* SingleResponseTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleResponseTests.swift; path = "Tests/Moya-ModelMapperTests/SingleResponseTests.swift"; sourceTree = "<group>"; };
 		3517BD85AE308884C8831564 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = "<group>"; };
-		3C72AC83CA40E875586C9C88 /* RxMoya-ModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "RxMoya-ModelMapper.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C72AC83CA40E875586C9C88 /* RxMoya_ModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxMoya_ModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EA02B0B44CC7866F0A3DE14 /* Observable+ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Observable+ModelMapper.swift"; path = "Sources/RxMoya-ModelMapper/Observable+ModelMapper.swift"; sourceTree = "<group>"; };
-		486CCF16E207E67D4B7DFCD1 /* ReactiveMoya-ModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "ReactiveMoya-ModelMapper.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		486CCF16E207E67D4B7DFCD1 /* ReactiveMoya_ModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveMoya_ModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		539A04B408AF1E5FE456E327 /* ObservableResponseTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableResponseTests.swift; path = "Tests/Moya-ModelMapperTests/ObservableResponseTests.swift"; sourceTree = "<group>"; };
 		66C3ACE42832543B9A34CF99 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Sources/Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		78083FC9CEF9645E80A5B0B4 /* ObservableAvailability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableAvailability.swift; path = "Sources/RxMoya-ModelMapper/ObservableAvailability.swift"; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		C1C630B248349CA20A0D9C91 /* Array+Shims.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Shims.swift"; path = "Sources/Moya-ModelMapper/Array+Shims.swift"; sourceTree = "<group>"; };
 		C55922126B30C2B6630B9E69 /* ResponseAvailability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseAvailability.swift; path = "Sources/Moya-ModelMapper/ResponseAvailability.swift"; sourceTree = "<group>"; };
 		CC67EC99AF6E9A5F2CB5B57D /* SignalProducer+ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SignalProducer+ModelMapper.swift"; path = "Sources/ReactiveMoya-ModelMapper/SignalProducer+ModelMapper.swift"; sourceTree = "<group>"; };
-		D110D873C969A7951B137607 /* Moya-ModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Moya-ModelMapper.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D110D873C969A7951B137607 /* Moya_ModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Moya_ModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5DDE8AC90B73824F24B28ED /* Response+ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Response+ModelMapper.swift"; path = "Sources/Moya-ModelMapper/Response+ModelMapper.swift"; sourceTree = "<group>"; };
 		FD2B809444EDA9B341A5F838 /* ResponseTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseTests.swift; path = "Tests/Moya-ModelMapperTests/ResponseTests.swift"; sourceTree = "<group>"; };
 		FD796DFAFCD05FD32F7336C1 /* SignalProducerAvailability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignalProducerAvailability.swift; path = "Sources/ReactiveMoya-ModelMapper/SignalProducerAvailability.swift"; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBC5108A70596E25C286C20A /* Moya-ModelMapper.framework in Frameworks */,
+				DBC5108A70596E25C286C20A /* Moya_ModelMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C595A06B02D2477C1241382 /* Moya-ModelMapper.framework in Frameworks */,
+				0C595A06B02D2477C1241382 /* Moya_ModelMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,9 +154,9 @@
 		7F0ABD075288C07D10C8E63A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D110D873C969A7951B137607 /* Moya-ModelMapper.framework */,
-				486CCF16E207E67D4B7DFCD1 /* ReactiveMoya-ModelMapper.framework */,
-				3C72AC83CA40E875586C9C88 /* RxMoya-ModelMapper.framework */,
+				D110D873C969A7951B137607 /* Moya_ModelMapper.framework */,
+				486CCF16E207E67D4B7DFCD1 /* ReactiveMoya_ModelMapper.framework */,
+				3C72AC83CA40E875586C9C88 /* RxMoya_ModelMapper.framework */,
 				AABD4D24F29FDD66049A954B /* Moya-ModelMapperTests.xctest */,
 			);
 			name = Products;
@@ -247,7 +247,7 @@
 			);
 			name = "Moya-ModelMapper";
 			productName = "Moya-ModelMapper";
-			productReference = D110D873C969A7951B137607 /* Moya-ModelMapper.framework */;
+			productReference = D110D873C969A7951B137607 /* Moya_ModelMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F3C8B5F0801DDF315AF8ABBD /* ReactiveMoya-ModelMapper */ = {
@@ -264,7 +264,7 @@
 			);
 			name = "ReactiveMoya-ModelMapper";
 			productName = "ReactiveMoya-ModelMapper";
-			productReference = 486CCF16E207E67D4B7DFCD1 /* ReactiveMoya-ModelMapper.framework */;
+			productReference = 486CCF16E207E67D4B7DFCD1 /* ReactiveMoya_ModelMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FA69A356781D796BC6E2B7F1 /* RxMoya-ModelMapper */ = {
@@ -281,7 +281,7 @@
 			);
 			name = "RxMoya-ModelMapper";
 			productName = "RxMoya-ModelMapper";
-			productReference = 3C72AC83CA40E875586C9C88 /* RxMoya-ModelMapper.framework */;
+			productReference = 3C72AC83CA40E875586C9C88 /* RxMoya_ModelMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -298,6 +298,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 92DA3F3914789FF3E0DB3CB0;
@@ -355,7 +356,6 @@
 			inputPaths = (
 				Quick.framework,
 				Nimble.framework,
-				Result.framework,
 				Alamofire.framework,
 				ReactiveSwift.framework,
 				RxSwift.framework,
@@ -369,7 +369,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = " exec \"${SRCROOT}/scripts/copy-carthage-frameworks.sh\"";
+			shellScript = " exec \"${SRCROOT}/scripts/copy-carthage-frameworks.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -485,6 +485,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -493,6 +495,8 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
@@ -500,21 +504,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
-				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = "$(SRCROOT)/Carthage/Build/tvOS/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = "$(SRCROOT)/Carthage/Build/iOS/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(SRCROOT)/Carthage/Build/Mac/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = "$(SRCROOT)/Carthage/Build/watchOS/ $(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
+					"$(SRCROOT)/Carthage/Build/tvOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
+					"$(SRCROOT)/Carthage/Build/iOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(SRCROOT)/Carthage/Build/Mac/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
+					"$(SRCROOT)/Carthage/Build/watchOS/",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.MoyaModelMapperTests;
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -570,6 +582,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -579,6 +593,8 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
@@ -592,26 +608,34 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = "$(SRCROOT)/Carthage/Build/tvOS/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = "$(SRCROOT)/Carthage/Build/iOS/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(SRCROOT)/Carthage/Build/Mac/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = "$(SRCROOT)/Carthage/Build/watchOS/ $(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
+					"$(SRCROOT)/Carthage/Build/tvOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
+					"$(SRCROOT)/Carthage/Build/iOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(SRCROOT)/Carthage/Build/Mac/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
+					"$(SRCROOT)/Carthage/Build/watchOS/",
+					"$(inherited)",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.MoyaModelMapper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -625,26 +649,34 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = "$(SRCROOT)/Carthage/Build/tvOS/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = "$(SRCROOT)/Carthage/Build/iOS/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(SRCROOT)/Carthage/Build/Mac/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = "$(SRCROOT)/Carthage/Build/watchOS/ $(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
+					"$(SRCROOT)/Carthage/Build/tvOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
+					"$(SRCROOT)/Carthage/Build/iOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(SRCROOT)/Carthage/Build/Mac/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
+					"$(SRCROOT)/Carthage/Build/watchOS/",
+					"$(inherited)",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.RxMoyaModelMapper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -658,26 +690,34 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = "$(SRCROOT)/Carthage/Build/tvOS/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = "$(SRCROOT)/Carthage/Build/iOS/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(SRCROOT)/Carthage/Build/Mac/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = "$(SRCROOT)/Carthage/Build/watchOS/ $(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
+					"$(SRCROOT)/Carthage/Build/tvOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
+					"$(SRCROOT)/Carthage/Build/iOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(SRCROOT)/Carthage/Build/Mac/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
+					"$(SRCROOT)/Carthage/Build/watchOS/",
+					"$(inherited)",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.MoyaModelMapper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -691,26 +731,34 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = "$(SRCROOT)/Carthage/Build/tvOS/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = "$(SRCROOT)/Carthage/Build/iOS/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(SRCROOT)/Carthage/Build/Mac/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = "$(SRCROOT)/Carthage/Build/watchOS/ $(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
+					"$(SRCROOT)/Carthage/Build/tvOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
+					"$(SRCROOT)/Carthage/Build/iOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(SRCROOT)/Carthage/Build/Mac/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
+					"$(SRCROOT)/Carthage/Build/watchOS/",
+					"$(inherited)",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.ReactiveMoyaModelMapper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -724,26 +772,34 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = "$(SRCROOT)/Carthage/Build/tvOS/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = "$(SRCROOT)/Carthage/Build/iOS/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(SRCROOT)/Carthage/Build/Mac/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = "$(SRCROOT)/Carthage/Build/watchOS/ $(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
+					"$(SRCROOT)/Carthage/Build/tvOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
+					"$(SRCROOT)/Carthage/Build/iOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(SRCROOT)/Carthage/Build/Mac/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
+					"$(SRCROOT)/Carthage/Build/watchOS/",
+					"$(inherited)",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.RxMoyaModelMapper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -751,21 +807,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
-				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = "$(SRCROOT)/Carthage/Build/tvOS/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = "$(SRCROOT)/Carthage/Build/iOS/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(SRCROOT)/Carthage/Build/Mac/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = "$(SRCROOT)/Carthage/Build/watchOS/ $(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
+					"$(SRCROOT)/Carthage/Build/tvOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
+					"$(SRCROOT)/Carthage/Build/iOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(SRCROOT)/Carthage/Build/Mac/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
+					"$(SRCROOT)/Carthage/Build/watchOS/",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.MoyaModelMapperTests;
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -779,26 +843,34 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = "$(SRCROOT)/Carthage/Build/tvOS/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = "$(SRCROOT)/Carthage/Build/iOS/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "$(SRCROOT)/Carthage/Build/Mac/ $(inherited)";
-				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = "$(SRCROOT)/Carthage/Build/watchOS/ $(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = (
+					"$(SRCROOT)/Carthage/Build/tvOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = (
+					"$(SRCROOT)/Carthage/Build/iOS/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(SRCROOT)/Carthage/Build/Mac/",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=watch*]" = (
+					"$(SRCROOT)/Carthage/Build/watchOS/",
+					"$(inherited)",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunshinejr.ReactiveMoyaModelMapper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
