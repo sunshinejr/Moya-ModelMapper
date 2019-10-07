@@ -14,14 +14,12 @@
 		5135AC4AD816E8E3FC3B5938 /* ResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2B809444EDA9B341A5F838 /* ResponseTests.swift */; };
 		641507C8719F8204F8E1490B /* ObservableAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78083FC9CEF9645E80A5B0B4 /* ObservableAvailability.swift */; };
 		68B79BD5B36CD2870AF5A59B /* SignalProducerAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD796DFAFCD05FD32F7336C1 /* SignalProducerAvailability.swift */; };
-		873B371C22A23232FC1627B6 /* ResponseAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55922126B30C2B6630B9E69 /* ResponseAvailability.swift */; };
 		88C16FD91FE9F148818659A6 /* SignalProducer+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC67EC99AF6E9A5F2CB5B57D /* SignalProducer+ModelMapper.swift */; };
 		99532958B23F3372AD815218 /* TestMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7952C8647C854A3B3599D059 /* TestMappable.swift */; };
 		DBC5108A70596E25C286C20A /* Moya_ModelMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D110D873C969A7951B137607 /* Moya_ModelMapper.framework */; };
 		EB62AFCC30C2F8EFB0361E0C /* Observable+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA02B0B44CC7866F0A3DE14 /* Observable+ModelMapper.swift */; };
 		ED0076D7FCFAB92EC7BFA79B /* SignalProducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28655D22B9CA03FA341E0FF1 /* SignalProducerTests.swift */; };
 		F90929FE3776DA014F84A90B /* Response+ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DDE8AC90B73824F24B28ED /* Response+ModelMapper.swift */; };
-		FD1D86A69093797E5E9689D0 /* Array+Shims.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C630B248349CA20A0D9C91 /* Array+Shims.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +59,6 @@
 		7952C8647C854A3B3599D059 /* TestMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestMappable.swift; path = "Tests/Moya-ModelMapperTests/Helpers/TestMappable.swift"; sourceTree = "<group>"; };
 		7AB359DF460E32E37F603D4C /* Single+ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Single+ModelMapper.swift"; path = "Sources/RxMoya-ModelMapper/Single+ModelMapper.swift"; sourceTree = "<group>"; };
 		AABD4D24F29FDD66049A954B /* Moya-ModelMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Moya-ModelMapperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1C630B248349CA20A0D9C91 /* Array+Shims.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Shims.swift"; path = "Sources/Moya-ModelMapper/Array+Shims.swift"; sourceTree = "<group>"; };
-		C55922126B30C2B6630B9E69 /* ResponseAvailability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseAvailability.swift; path = "Sources/Moya-ModelMapper/ResponseAvailability.swift"; sourceTree = "<group>"; };
 		CC67EC99AF6E9A5F2CB5B57D /* SignalProducer+ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SignalProducer+ModelMapper.swift"; path = "Sources/ReactiveMoya-ModelMapper/SignalProducer+ModelMapper.swift"; sourceTree = "<group>"; };
 		D110D873C969A7951B137607 /* Moya_ModelMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Moya_ModelMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5DDE8AC90B73824F24B28ED /* Response+ModelMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Response+ModelMapper.swift"; path = "Sources/Moya-ModelMapper/Response+ModelMapper.swift"; sourceTree = "<group>"; };
@@ -175,9 +171,7 @@
 		A4F4E11A751352E64C6B85A3 /* Moya-ModelMapper */ = {
 			isa = PBXGroup;
 			children = (
-				C1C630B248349CA20A0D9C91 /* Array+Shims.swift */,
 				E5DDE8AC90B73824F24B28ED /* Response+ModelMapper.swift */,
-				C55922126B30C2B6630B9E69 /* ResponseAvailability.swift */,
 			);
 			name = "Moya-ModelMapper";
 			sourceTree = "<group>";
@@ -397,9 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD1D86A69093797E5E9689D0 /* Array+Shims.swift in Sources */,
 				F90929FE3776DA014F84A90B /* Response+ModelMapper.swift in Sources */,
-				873B371C22A23232FC1627B6 /* ResponseAvailability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,7 +4,7 @@ import Mapper
 
 public extension Response {
 
-    public func map<T: Mappable>(to type: T.Type) throws -> T {
+    func map<T: Mappable>(to type: T.Type) throws -> T {
         guard let jsonDictionary = try mapJSON() as? NSDictionary else {
             throw MoyaError.jsonMapping(self)
         }
@@ -16,7 +16,7 @@ public extension Response {
         }
     }
     
-    public func map<T: Mappable>(to type: T.Type, keyPath: String?) throws -> T {
+    func map<T: Mappable>(to type: T.Type, keyPath: String?) throws -> T {
         guard let keyPath = keyPath else { return try map(to: type) }
         
         guard let jsonDictionary = try mapJSON() as? NSDictionary,
@@ -31,7 +31,7 @@ public extension Response {
         }
     }
     
-    public func map<T: Mappable>(to type: [T].Type) throws -> [T] {
+    func map<T: Mappable>(to type: [T].Type) throws -> [T] {
         guard let jsonArray = try mapJSON() as? [NSDictionary] else {
             throw MoyaError.jsonMapping(self)
         }
@@ -43,7 +43,7 @@ public extension Response {
         }
     }
 
-    public func compactMap<T: Mappable>(to type: [T].Type) throws -> [T] {
+    func compactMap<T: Mappable>(to type: [T].Type) throws -> [T] {
         guard let jsonArray = try mapJSON() as? [NSDictionary] else {
             throw MoyaError.jsonMapping(self)
         }
@@ -51,7 +51,7 @@ public extension Response {
         return jsonArray.compactMap { try? T(map: Mapper(JSON: $0)) }
     }
     
-    public func map<T: Mappable>(to type: [T].Type, keyPath: String?) throws -> [T] {
+    func map<T: Mappable>(to type: [T].Type, keyPath: String?) throws -> [T] {
         guard let keyPath = keyPath else { return try map(to: type) }
         
         guard let jsonDictionary = try mapJSON() as? NSDictionary,
@@ -66,7 +66,7 @@ public extension Response {
         }
     }
 
-    public func compactMap<T: Mappable>(to type: [T].Type, keyPath: String?) throws -> [T] {
+    func compactMap<T: Mappable>(to type: [T].Type, keyPath: String?) throws -> [T] {
         guard let keyPath = keyPath else { return try compactMap(to: type) }
 
         guard let jsonDictionary = try mapJSON() as? NSDictionary,
