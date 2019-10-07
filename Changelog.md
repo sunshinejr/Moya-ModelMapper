@@ -1,5 +1,8 @@
 # Next
 
+# 10.0.0-beta.1
+- Moya updated to 14.0.0-beta.4
+
 # 9.0.0
 - Moya updated to 13.0.0
 
