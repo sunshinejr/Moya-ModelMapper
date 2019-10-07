@@ -2,6 +2,9 @@
 
 # 10.0.0-beta.1
 - Moya updated to 14.0.0-beta.4
+- Remove redundant `public` access level in the extension.
+- Removed Swift < 4.1 compatibility.
+- Removed old `mapObject(:)` and `mapArray(:)` methods (they were giving unavailability errors anyways).
 
 # 9.0.0
 - Moya updated to 13.0.0
