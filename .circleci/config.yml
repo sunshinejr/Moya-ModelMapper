@@ -22,7 +22,7 @@ jobs:
           command: swift build
       - run: 
           name: swift test
-          command: swift test
+          command: TEST=1 swift test
       - store_test_results:
           path: test_output/report.xml
       - store_artifacts:
