@@ -1,5 +1,8 @@
 # Next
 
+# 10.0.0-beta.2
+- Moya updated to 14.0.0-beta.5
+
 # 10.0.0-beta.1
 - Moya updated to 14.0.0-beta.4
 - Remove redundant `public` access level in the extension.
