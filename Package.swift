@@ -7,7 +7,7 @@ let shouldTest = ProcessInfo.processInfo.environment["TEST_MM"] == "1"
 
 func resolveDependencies() -> [Package.Dependency] {
     let baseDependencies: [Package.Dependency] = [
-        .package(url: "https://github.com/Moya/Moya.git", .exact("14.0.0-beta.5")),
+        .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "14.0.0")),
         .package(url: "https://github.com/lyft/mapper.git", .upToNextMajor(from: "10.0.0"))
     ]
 
@@ -48,7 +48,7 @@ let package = Package(
         .iOS(.v10),
         .tvOS(.v10),
         .watchOS(.v3)
-    ],    
+    ],
     products: [
         .library(name: "Moya-ModelMapper", targets: ["Moya-ModelMapper"]),
         .library(name: "ReactiveMoya-ModelMapper", targets: ["ReactiveMoya-ModelMapper"]),
