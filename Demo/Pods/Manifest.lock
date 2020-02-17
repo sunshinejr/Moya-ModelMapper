@@ -1,41 +1,37 @@
 PODS:
-  - Alamofire (4.8.2)
+  - Alamofire (5.0.0)
   - ModelMapper (10.0.0):
     - ModelMapper/Core (= 10.0.0)
   - ModelMapper/Core (10.0.0)
-  - Moya (13.0.0):
-    - Moya/Core (= 13.0.0)
-  - Moya-ModelMapper (9.0.0):
-    - Moya-ModelMapper/Core (= 9.0.0)
-  - Moya-ModelMapper/Core (9.0.0):
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya-ModelMapper (10.0.0):
+    - Moya-ModelMapper/Core (= 10.0.0)
+  - Moya-ModelMapper/Core (10.0.0):
     - ModelMapper (~> 10.0)
-    - Moya (= 13.0.0)
-  - Moya/Core (13.0.0):
-    - Alamofire (~> 4.1)
-    - Result (~> 4.1)
-  - Result (4.1.0)
+    - Moya (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
 
 DEPENDENCIES:
   - Moya-ModelMapper (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Alamofire
     - ModelMapper
     - Moya
-    - Result
 
 EXTERNAL SOURCES:
   Moya-ModelMapper:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Alamofire: 58ff2bfb8daaacaa233d5c36e37b10a5248f59b1
   ModelMapper: a8dbf2a2003bf626627b9fe7c9a22b3405a30404
-  Moya: 161263550064ff8a4948e8ff63137fd72a876292
-  Moya-ModelMapper: c77e6d8c6a372ec17863b8bf02e50e49068919e8
-  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Moya-ModelMapper: 517e284c5a63b6a5dc21c598142c51d6a99a010d
 
-PODFILE CHECKSUM: d1cfc5edd47575898d3edf159f6af1afd82ec19b
+PODFILE CHECKSUM: c6d94c53d48a232c9f6fe34e664c20b43603c023
 
-COCOAPODS: 1.7.0.beta.2
+COCOAPODS: 1.8.0
