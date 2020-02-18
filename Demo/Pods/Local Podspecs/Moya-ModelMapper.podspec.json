@@ -1,6 +1,6 @@
 {
   "name": "Moya-ModelMapper",
-  "version": "9.0.0",
+  "version": "10.0.0",
   "summary": "ModelMapper bindings for Moya.",
   "description": "[ModelMapper](https://github.com/lyft/mapper) bindings for\n[Moya](https://github.com/Moya/Moya) for easier JSON serialization.\nIncludes [RxSwift](https://github.com/ReactiveX/RxSwift/) and [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) bindings as well.\nInstructions on how to use it are in\n[the README](https://github.com/sunshinejr/Moya-ModelMapper).",
   "homepage": "https://github.com/sunshinejr/Moya-ModelMapper",
@@ -10,14 +10,14 @@
   },
   "source": {
     "git": "https://github.com/sunshinejr/Moya-ModelMapper.git",
-    "tag": "9.0.0"
+    "tag": "10.0.0"
   },
   "social_media_url": "https://twitter.com/thesunshinejr",
   "platforms": {
-    "ios": "8.0",
-    "osx": "10.10",
+    "ios": "10.0",
+    "osx": "10.12",
     "watchos": "3.0",
-    "tvos": "9.0"
+    "tvos": "10.0"
   },
   "swift_versions": "5.0",
   "cocoapods_version": ">= 1.4.0",
@@ -29,7 +29,7 @@
       "source_files": "Sources/Moya-ModelMapper/*.swift",
       "dependencies": {
         "Moya": [
-          "13.0.0"
+          "14.0.0"
         ],
         "ModelMapper": [
           "~> 10.0"
@@ -42,7 +42,7 @@
       "source_files": "Sources/RxMoya-ModelMapper/*.swift",
       "dependencies": {
         "Moya/RxSwift": [
-          "13.0.0-beta.1"
+          "14.0.0"
         ],
         "Moya-ModelMapper/Core": [
 
@@ -57,7 +57,7 @@
       "source_files": "Sources/ReactiveMoya-ModelMapper/*.swift",
       "dependencies": {
         "Moya/ReactiveSwift": [
-          "13.0.0-beta.1"
+          "14.0.0"
         ],
         "Moya-ModelMapper/Core": [
 
@@ -67,5 +67,6 @@
         ]
       }
     }
-  ]
+  ],
+  "swift_version": "5.0"
 }
