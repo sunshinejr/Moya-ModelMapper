@@ -10,17 +10,17 @@
 ## CocoaPods
 
 ```
-pod 'Moya-ModelMapper', '10.0.0'
+pod 'Moya-ModelMapper', '~> 10.0'
 ```
 
 The subspec if you want to use the bindings over RxSwift.
 ```
-pod 'Moya-ModelMapper/RxSwift', '10.0.0'
+pod 'Moya-ModelMapper/RxSwift', '~> 10.0'
 ```
 
 And the subspec if you want to use the bindings over ReactiveSwift.
 ```
-pod 'Moya-ModelMapper/ReactiveSwift', '10.0.0'
+pod 'Moya-ModelMapper/ReactiveSwift', '~> 10.0'
 ```
 
 ## Carthage
@@ -28,7 +28,7 @@ pod 'Moya-ModelMapper/ReactiveSwift', '10.0.0'
 Specify in Cartfile:
 
 ```
-github "sunshinejr/Moya-ModelMapper" "10.0.0"
+github "sunshinejr/Moya-ModelMapper" ~> 10.0
 ```
 
 Carthage users can point to this repository and use whichever generated framework they'd like, Moya-ModelMapper, RxMoya-ModelMapper, or ReactiveMoya-ModelMapper.
