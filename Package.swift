@@ -7,7 +7,7 @@ let shouldTest = ProcessInfo.processInfo.environment["TEST_MM"] == "1"
 
 func resolveDependencies() -> [Package.Dependency] {
     let baseDependencies: [Package.Dependency] = [
-        .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "14.0.0")),
+        .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "15.0.0")),
         .package(url: "https://github.com/lyft/mapper.git", .upToNextMajor(from: "10.0.0"))
     ]
 
