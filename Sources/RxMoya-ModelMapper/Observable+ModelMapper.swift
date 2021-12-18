@@ -7,7 +7,7 @@ import Mapper
 #endif
 
 /// Extension for processing Responses into Mappable objects through ObjectMapper
-public extension ObservableType where E == Response {
+public extension ObservableType where Element == Response {
 
     /// Maps data received from the signal into an object which implement the Mappable protocol
     /// If the conversion fails, error event is sent.
