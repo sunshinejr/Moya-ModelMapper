@@ -6,7 +6,7 @@ import Mapper
     import Moya_ModelMapper
 #endif
 
-public extension ObservableType where E == Response {
+public extension ObservableType where Element == Response {
 
     @available(*, unavailable, renamed: "map(to:keyPath:)")
     public func mapObject<T: Mappable>(type: T.Type, keyPath: String? = nil) -> Observable<T> { fatalError() }
